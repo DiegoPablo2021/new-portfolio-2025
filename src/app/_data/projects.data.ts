@@ -12,13 +12,13 @@ const PROJECTS_DATA_EN: Array<Project> = [
     imageUrl: 'assets/projects/01-dashboard.jpg',
   },
   {
-    title: 'Triggo Case Study',
+    title: 'Triggo Case Study (Senior-level ML Pipeline)',
     description:
-      'This project aims to carry out a complete analysis of sales data from the Brazilian e-commerce site Olist, in order to extract relevant insights into commercial performance, customer behavior, delivery logistics and satisfaction.',
+      'A comprehensive, Object-Oriented Machine Learning pipeline and Analytics Dashboard built during a professional technical test. Features fully automated Clustering with dynamic Silhouette Score logic, centralized logging, Pytest integration, and actionable Marketing strategies for Business metrics out of the Olist e-commerce massive dataset.',
     viewLink:
-      'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/notebooks/dashboard.ipynb',
+      'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/dashboard.ipynb',
     sourceCode: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025',
-    imageUrl: 'assets/projects/02-etl.jpg',
+    imageUrl: 'assets/projects/triggo_demo.gif',
   },
   {
     title: 'Olist Analytics & Data Engineering',
@@ -40,13 +40,13 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     imageUrl: 'assets/projects/01-dashboard.jpg',
   },
   {
-    title: 'Estudo de Caso Triggo',
+    title: 'Estudo de Caso Triggo (Machine Learning com Orientação a Objetos)',
     description:
-      'Este projeto tem como objetivo realizar uma análise completa dos dados de vendas do e-commerce brasileiro Olist, a fim de extrair insights relevantes sobre o desempenho comercial, comportamento do cliente, logística de entrega e satisfação.',
+      'Pipeline Sênior e Dashboard Analytics construídos durante o teste técnico Triggo 2025. Inclui Clusterização OOD com automação via Silhouette Score dinâmico, MLOps, logs centralizados, integrações Pytest e mapeamento automático para estratégias de negócios sobre o Big Data do e-commerce Olist.',
     viewLink:
-      'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/notebooks/dashboard.ipynb',
+      'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/dashboard.ipynb',
     sourceCode: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025',
-    imageUrl: 'assets/projects/02-etl.jpg',
+    imageUrl: 'assets/projects/triggo_demo.gif',
   },
   {
     title: 'Engenharia de Dados & Analytics Olist',
