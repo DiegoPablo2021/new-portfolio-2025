@@ -65,7 +65,7 @@ Collaborated with engineering teams to ensure data consistency and automation th
     logo: 'assets/img/enterprise/programmersbeyondit_logo.jpg',
   },
   {
-    title: 'Developer Trainee',
+    title: 'Developer',
     company: 'Wipro',
     period: 'Jul 2022 – Oct 2023',
     location: 'Remote',
@@ -88,7 +88,7 @@ Additionally, studied cloud technologies such as Azure, AWS, and GCP, broadening
     logo: 'assets/img/enterprise/wipro_logo.jpg',
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'Software Engineer',
     company: 'Banco PAN',
     period: 'Feb 2023 – Jun 2023',
     location: 'Remote',
@@ -173,7 +173,7 @@ Colaborei com times de engenharia para garantir consistência dos dados e automa
     logo: 'assets/img/enterprise/programmersbeyondit_logo.jpg',
   },
   {
-    title: 'Desenvolvedor Trainee',
+    title: 'Desenvolvedor',
     company: 'Wipro',
     period: 'Jul 2022 – Out 2023',
     location: 'Remoto',
@@ -196,7 +196,7 @@ Também estudei tecnologias em nuvem como Azure, AWS e GCP, ampliando minha vis�
     logo: 'assets/img/enterprise/wipro_logo.jpg',
   },
   {
-    title: 'Desenvolvedor Júnior',
+    title: 'Desenvolvedor',
     company: 'Banco PAN',
     period: 'Fev 2023 – Jun 2023',
     location: 'Remoto',

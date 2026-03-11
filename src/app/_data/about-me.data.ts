@@ -14,7 +14,7 @@ export const ABOUT_ME_EN = signal<AboutSection[]>([
   {
     id: 'overview',
     title: 'Overview',
-    content: `I’m a Junior Data Analyst with experience in data engineering and analytics, specializing in the extraction, transformation, and visualization of information to support strategic decision-making and process optimization.`,
+    content: `I’m a Data Analyst with experience in data engineering and analytics, specializing in the extraction, transformation, and visualization of information to support strategic decision-making and process optimization.`,
     icon: faChartLine,
   },
   {
@@ -59,7 +59,7 @@ export const ABOUT_ME_PT = signal<AboutSection[]>([
   {
     id: 'overview',
     title: 'Visão Geral',
-    content: `Sou um Analista de Dados Júnior com experiência em engenharia e análise de dados, especializado na extração, transformação e visualização de informações para apoiar a tomada de decisões estratégicas e a otimização de processos.`,
+    content: `Sou um Analista de Dados com experiência em engenharia e análise de dados, especializado na extração, transformação e visualização de informações para apoiar a tomada de decisões estratégicas e a otimização de processos.`,
     icon: faChartLine,
   },
   {
