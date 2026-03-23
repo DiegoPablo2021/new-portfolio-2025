@@ -27,6 +27,13 @@ const PROJECTS_DATA_EN: Array<Project> = [
     sourceCode: 'https://github.com/DiegoPablo2021/olist-analytics',
     imageUrl: 'assets/projects/olist_architecture_flow.png',
   },
+  {
+    title: 'Lighthouse-Dados-AI',
+    description: 'Complete data analysis (2023-2024) focusing on EDA, predictive modeling, and recommendation systems. Implements an end-to-end Data Science pipeline.',
+    viewLink: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
+    sourceCode: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
+    imageUrl: 'assets/projects/lighthouse_end_to_end.png',
+  },
 ];
 
 export const PROJECTS_DATA_PT: Array<Project> = [
@@ -54,6 +61,13 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     viewLink: 'https://github.com/DiegoPablo2021/olist-analytics',
     sourceCode: 'https://github.com/DiegoPablo2021/olist-analytics',
     imageUrl: 'assets/projects/olist_architecture_flow.png',
+  },
+  {
+    title: 'Lighthouse-Dados-AI',
+    description: 'Análise completa de dados (2023-2024) com foco em EDA, modelagem preditiva e sistemas de recomendação. Implementa uma pipeline end-to-end de Data Science.',
+    viewLink: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
+    sourceCode: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
+    imageUrl: 'assets/projects/lighthouse_end_to_end.png',
   },
 ];
 
