@@ -9,7 +9,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
     viewLink:
       'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
     sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
-    imageUrl: 'assets/projects/linkedin_lakehouse_end_to_end.svg',
+    imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
   },
   {
     title: 'Data Dashboard',
@@ -60,7 +60,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     viewLink:
       'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
     sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
-    imageUrl: 'assets/projects/linkedin_lakehouse_end_to_end.svg',
+    imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
   },
   {
     title: 'Dashboard de Dados',
