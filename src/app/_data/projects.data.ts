@@ -3,6 +3,7 @@ import { Project } from "../shared/models/project.model";
 
 const PROJECTS_DATA_EN: Array<Project> = [
   {
+    slug: 'linkedin-career-intelligence-lakehouse',
     title: 'LinkedIn Career Intelligence Lakehouse',
     description:
       'End-to-end data engineering case that transforms LinkedIn exports into an analytics app with Python ingestion, DuckDB warehouse, dbt modeling, and Streamlit storytelling.',
@@ -12,6 +13,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
     imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
   },
   {
+    slug: 'data-dashboard',
     title: 'Data Dashboard',
     description:
       'Executive Sales Dashboard developed in Power BI. Architecture based on data extraction via Excel, featuring relational data modeling and the structuring of complex financial metrics using DAX language, providing a comprehensive analytical view of revenue and KPIs.',
@@ -21,6 +23,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
     imageUrl: 'assets/projects/dashboard_neon_flow.png',
   },
   {
+    slug: 'triggo-case-study',
     title: 'Triggo Case Study',
     description:
       'A comprehensive, Object-Oriented Machine Learning pipeline and Analytics Dashboard built during a professional technical test. Features fully automated Clustering with dynamic Silhouette Score logic, centralized logging, Pytest integration, and actionable Marketing strategies for Business metrics out of the Olist e-commerce massive dataset.',
@@ -30,6 +33,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
     imageUrl: 'assets/projects/ml_pipeline_dashboard.png',
   },
   {
+    slug: 'olist-analytics-data-engineering',
     title: 'Olist Analytics & Data Engineering',
     description: 'End-to-end portfolio project focusing on Brazilian e-commerce dataset analysis. Includes automated ETL data ingestion, PostgreSQL Data Warehouse modeling, and a Power BI Business Intelligence dashboard.',
     viewLink: 'https://github.com/DiegoPablo2021/olist-analytics',
@@ -37,6 +41,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
     imageUrl: 'assets/projects/olist_architecture_flow.png',
   },
   {
+    slug: 'lighthouse-dados-ai',
     title: 'Lighthouse-Dados-AI',
     description: 'Complete data analysis (2023-2024) focusing on EDA, predictive modeling, and recommendation systems. Implements an end-to-end Data Science pipeline.',
     viewLink: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
@@ -44,6 +49,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
     imageUrl: 'assets/projects/lighthouse_end_to_end.png',
   },
   {
+    slug: 'strategic-sales-analysis',
     title: 'Strategic Sales Analysis',
     description: 'Executive dashboard developed in Power BI for Jaar Consult evaluation. Features comprehensive analysis on sales performance, discounts strategy, and product KPIs.',
     viewLink: 'https://github.com/DiegoPablo2021/PBI-Jaar-Consult',
@@ -54,6 +60,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
 
 export const PROJECTS_DATA_PT: Array<Project> = [
   {
+    slug: 'linkedin-career-intelligence-lakehouse',
     title: 'LinkedIn Career Intelligence Lakehouse',
     description:
       'Case end-to-end de engenharia de dados que transforma exportações do LinkedIn em um app analítico com ingestão em Python, warehouse em DuckDB, modelagem em dbt e storytelling em Streamlit.',
@@ -63,6 +70,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
   },
   {
+    slug: 'data-dashboard',
     title: 'Dashboard de Dados',
     description:
       'Dashboard Executivo de Vendas desenvolvido em Power BI. Arquitetura baseada em extração de dados via Excel, com modelagem relacional e estruturação de dezenas de métricas complexas financeiras e comerciais utilizando a linguagem DAX, oferecendo visão analítica completa do faturamento.',
@@ -72,6 +80,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     imageUrl: 'assets/projects/dashboard_neon_flow.png',
   },
   {
+    slug: 'triggo-case-study',
     title: 'Estudo de Caso Triggo',
     description:
       'Pipeline e Dashboard Analytics construídos durante o teste técnico Triggo 2025. Inclui Clusterização OOD com automação via Silhouette Score dinâmico, MLOps, logs centralizados, integrações Pytest e mapeamento automático para estratégias de negócios sobre o Big Data do e-commerce Olist.',
@@ -81,6 +90,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     imageUrl: 'assets/projects/ml_pipeline_dashboard.png',
   },
   {
+    slug: 'olist-analytics-data-engineering',
     title: 'Engenharia de Dados & Analytics Olist',
     description: 'Projeto de portfólio End-to-End focado na análise de dados do e-commerce Olist. Inclui ingestão automatizada de dados (ETL), modelagem de Data Warehouse em PostgreSQL e Dashboard Executivo no Power BI.',
     viewLink: 'https://github.com/DiegoPablo2021/olist-analytics',
@@ -88,6 +98,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     imageUrl: 'assets/projects/olist_architecture_flow.png',
   },
   {
+    slug: 'lighthouse-dados-ai',
     title: 'Lighthouse-Dados-AI',
     description: 'Análise completa de dados (2023-2024) com foco em EDA, modelagem preditiva e sistemas de recomendação. Implementa uma pipeline end-to-end de Data Science.',
     viewLink: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
@@ -95,6 +106,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     imageUrl: 'assets/projects/lighthouse_end_to_end.png',
   },
   {
+    slug: 'strategic-sales-analysis',
     title: 'Análise Estratégica de Vendas',
     description: 'Dashboard executivo desenvolvido em Power BI para a avaliação da Jaar Consult. Apresenta análises abrangentes sobre a performance de vendas, estratégia de descontos e KPIs de produtos.',
     viewLink: 'https://github.com/DiegoPablo2021/PBI-Jaar-Consult',

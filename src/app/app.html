@@ -6,6 +6,15 @@
   (toggleTheme)="_themeService.toggleTheme()"
   (toggleLanguage)="_dataService.toggleLanguage()"
 />
+@if (currentProjectCase(); as caseItem) {
+<main>
+  <app-project-case
+    [projectCase]="caseItem"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+</main>
+} @else {
 <main>
   <app-hero
     [hero]="this._dataService.heroSection()"
@@ -50,6 +59,7 @@
     [currentLanguage]="currentLanguage"
   />
 </main>
+}
 <app-footer
   [footerContent]="this._dataService.footer()"
   [currentLanguage]="currentLanguage"

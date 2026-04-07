@@ -1,0 +1,281 @@
+@use '../../shared/scss/variables' as var;
+
+.project-case-page {
+  padding: 5rem 2rem;
+  background-color: var.$background-body-light;
+  min-height: calc(100vh - 160px);
+
+  &.dark {
+    background-color: var.$background-body-dark;
+  }
+}
+
+.project-case-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var.$text-subtitle-light;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.case-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 24px;
+  border: 1px solid var.$border-light;
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.08), rgba(125, 211, 252, 0.03));
+  margin-bottom: 2rem;
+}
+
+.case-eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var.$text-subtitle-light;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.case-hero-copy h1 {
+  font-size: 2.6rem;
+  line-height: 1.08;
+  margin-bottom: 1rem;
+  color: var.$text-title-light;
+}
+
+.case-summary {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var.$text-paragraph-light;
+  margin-bottom: 1.5rem;
+  max-width: 58ch;
+}
+
+.case-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.case-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.15rem;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.case-button.primary {
+  background-color: var.$button-background-light;
+  color: #fff;
+}
+
+.case-button.secondary {
+  background-color: transparent;
+  color: var.$text-title-light;
+  border-color: var.$border-light;
+}
+
+.case-hero-image img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid var.$border-light;
+  background-color: var.$background-card-light;
+}
+
+.case-section {
+  margin-bottom: 2rem;
+}
+
+.case-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var.$text-title-light;
+}
+
+.case-section p {
+  line-height: 1.75;
+  color: var.$text-paragraph-light;
+}
+
+.chip-list {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 0.6rem 0.85rem;
+  border-radius: 999px;
+  background-color: var.$background-card-light;
+  border: 1px solid var.$border-light;
+  color: var.$text-title-light;
+  font-weight: 600;
+}
+
+.architecture-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.architecture-item {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var.$border-light;
+  border-radius: 16px;
+  background-color: var.$background-card-light;
+}
+
+.architecture-index {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background-color: var.$button-background-light;
+  color: #fff;
+  font-weight: 800;
+}
+
+.metrics-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.metric-card,
+.screenshot-card,
+.case-not-found {
+  border: 1px solid var.$border-light;
+  border-radius: 18px;
+  background-color: var.$background-card-light;
+}
+
+.metric-card {
+  padding: 1.25rem;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: var.$text-subtitle-light;
+  margin-bottom: 0.6rem;
+}
+
+.metric-card h3 {
+  font-size: 2rem;
+  color: var.$text-title-light;
+  margin-bottom: 0.5rem;
+}
+
+.metric-detail {
+  font-size: 0.95rem;
+}
+
+.screenshots-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.screenshot-card {
+  overflow: hidden;
+}
+
+.screenshot-card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background-color: var.$muted-light;
+}
+
+.screenshot-card figcaption {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: var.$text-paragraph-light;
+  line-height: 1.6;
+}
+
+.case-not-found {
+  padding: 2rem;
+}
+
+.project-case-page.dark {
+  .back-link {
+    color: var.$text-subtitle-dark;
+  }
+
+  .case-hero {
+    border-color: var.$border-dark;
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(30, 41, 59, 0.65));
+  }
+
+  .case-hero-copy h1,
+  .case-section h2,
+  .chip,
+  .metric-card h3 {
+    color: var.$text-title-dark;
+  }
+
+  .case-summary,
+  .case-section p,
+  .screenshot-card figcaption {
+    color: var.$text-paragraph-dark;
+  }
+
+  .case-button.primary {
+    background-color: var.$button-background-dark;
+  }
+
+  .case-button.secondary {
+    color: var.$text-title-dark;
+    border-color: var.$border-dark;
+  }
+
+  .case-hero-image img,
+  .chip,
+  .architecture-item,
+  .metric-card,
+  .screenshot-card,
+  .case-not-found {
+    border-color: var.$border-dark;
+    background-color: var.$background-card-dark;
+  }
+
+  .architecture-index {
+    background-color: var.$button-background-dark;
+  }
+
+  .metric-label,
+  .case-eyebrow {
+    color: var.$text-subtitle-dark;
+  }
+
+  .screenshot-card img {
+    background-color: var.$muted-dark;
+  }
+}
+
+@media (max-width: 900px) {
+  .case-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .case-hero-copy h1 {
+    font-size: 2.1rem;
+  }
+}

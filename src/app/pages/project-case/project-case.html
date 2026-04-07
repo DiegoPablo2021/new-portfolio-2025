@@ -1,0 +1,97 @@
+@if (projectCase(); as caseItem) {
+<section class="project-case-page" [class.dark]="currentTheme() === 'dark'">
+  <div class="project-case-container">
+    <a class="back-link" href="/#projects">
+      {{ currentLanguage() === 'pt' ? '← Voltar para projetos' : '← Back to projects' }}
+    </a>
+
+    <header class="case-hero">
+      <div class="case-hero-copy">
+        <p class="case-eyebrow">{{ caseItem.category }}</p>
+        <h1>{{ caseItem.title }}</h1>
+        <p class="case-summary">{{ caseItem.summary }}</p>
+        <div class="case-actions">
+          <a [href]="caseItem.githubUrl" target="_blank" rel="noopener noreferrer" class="case-button primary">
+            GitHub
+          </a>
+          <a href="/#contact" class="case-button secondary">
+            {{ currentLanguage() === 'pt' ? 'Falar sobre o projeto' : 'Talk about this project' }}
+          </a>
+        </div>
+      </div>
+      <div class="case-hero-image">
+        <img [src]="caseItem.screenshots[0].src" [alt]="caseItem.screenshots[0].alt" />
+      </div>
+    </header>
+
+    <section class="case-section">
+      <h2>{{ currentLanguage() === 'pt' ? 'Problema' : 'Problem' }}</h2>
+      <p>{{ caseItem.problem }}</p>
+    </section>
+
+    <section class="case-section">
+      <h2>{{ currentLanguage() === 'pt' ? 'Stack' : 'Stack' }}</h2>
+      <div class="chip-list">
+        @for (item of caseItem.stack; track item) {
+        <span class="chip">{{ item }}</span>
+        }
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>{{ currentLanguage() === 'pt' ? 'Arquitetura' : 'Architecture' }}</h2>
+      <div class="architecture-list">
+        @for (step of caseItem.architecture; track step; let index = $index) {
+        <div class="architecture-item">
+          <div class="architecture-index">{{ index + 1 }}</div>
+          <p>{{ step }}</p>
+        </div>
+        }
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>{{ currentLanguage() === 'pt' ? 'Principais métricas' : 'Key metrics' }}</h2>
+      <div class="metrics-grid">
+        @for (metric of caseItem.metrics; track metric.label) {
+        <article class="metric-card">
+          <p class="metric-label">{{ metric.label }}</p>
+          <h3>{{ metric.value }}</h3>
+          <p class="metric-detail">{{ metric.detail }}</p>
+        </article>
+        }
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>{{ currentLanguage() === 'pt' ? 'Screenshots' : 'Screenshots' }}</h2>
+      <div class="screenshots-grid">
+        @for (shot of caseItem.screenshots; track shot.src) {
+        <figure class="screenshot-card">
+          <img [src]="shot.src" [alt]="shot.alt" />
+          <figcaption>{{ shot.caption }}</figcaption>
+        </figure>
+        }
+      </div>
+    </section>
+  </div>
+</section>
+} @else {
+<section class="project-case-page" [class.dark]="currentTheme() === 'dark'">
+  <div class="project-case-container">
+    <a class="back-link" href="/#projects">
+      {{ currentLanguage() === 'pt' ? '← Voltar para projetos' : '← Back to projects' }}
+    </a>
+    <div class="case-not-found">
+      <h1>{{ currentLanguage() === 'pt' ? 'Case não encontrado' : 'Case not found' }}</h1>
+      <p>
+        {{
+          currentLanguage() === 'pt'
+            ? 'Esse projeto ainda não possui uma página de case cadastrada.'
+            : 'This project does not have a registered case page yet.'
+        }}
+      </p>
+    </div>
+  </div>
+</section>
+}
