@@ -3,6 +3,15 @@ import { Project } from "../shared/models/project.model";
 
 const PROJECTS_DATA_EN: Array<Project> = [
   {
+    title: 'LinkedIn Career Intelligence Lakehouse',
+    description:
+      'End-to-end data engineering case that transforms LinkedIn exports into an analytics app with Python ingestion, DuckDB warehouse, dbt modeling, and Streamlit storytelling.',
+    viewLink:
+      'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
+    sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
+    imageUrl: 'assets/projects/linkedin_lakehouse_end_to_end.svg',
+  },
+  {
     title: 'Data Dashboard',
     description:
       'Executive Sales Dashboard developed in Power BI. Architecture based on data extraction via Excel, featuring relational data modeling and the structuring of complex financial metrics using DAX language, providing a comprehensive analytical view of revenue and KPIs.',
@@ -44,6 +53,15 @@ const PROJECTS_DATA_EN: Array<Project> = [
 ];
 
 export const PROJECTS_DATA_PT: Array<Project> = [
+  {
+    title: 'LinkedIn Career Intelligence Lakehouse',
+    description:
+      'Case end-to-end de engenharia de dados que transforma exportações do LinkedIn em um app analítico com ingestão em Python, warehouse em DuckDB, modelagem em dbt e storytelling em Streamlit.',
+    viewLink:
+      'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
+    sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
+    imageUrl: 'assets/projects/linkedin_lakehouse_end_to_end.svg',
+  },
   {
     title: 'Dashboard de Dados',
     description:
