@@ -3,6 +3,17 @@ import { Testimonial } from '../shared/models/testimonial.model';
 
 export const TESTIMONIALS_EN: Array<Testimonial> = [
   {
+    fullName: 'Hercílio Falcão',
+    profileImg: 'assets/img/hercilio_pic.jpg',
+    jobTitle: 'Junior Data Analyst | Python | SQL ',
+    relationship: {
+      relationDate: new Date('Apr 22, 2026 00:00:00'),
+      relationDescription:
+        'Diego is an exceptional guy. He helped me transition from back-end development to the data field back in April 2025, and since then he’s been guiding me step by step on what to do next and how to proceed on my journey. He always shares job openings, posts, articles, blogs, courses, certifications, and—most importantly—his knowledge. He’s excellent at explaining things, helping out, offering guidance, and saving us from bugs and problems that come up. Diego is a very patient and understanding person, and above all, someone with a lot of empathy who knows how to put himself in others’ shoes. He is a true mentor; everything I’ve learned so far and am building is largely thanks to his efforts to help me.',
+    },
+    profileLink: 'https://www.linkedin.com/in/herciliofalcao/',
+  },
+  {
     fullName: 'Paulo Henrique',
     profileImg: 'assets/img/paulo_pic.png',
     jobTitle: 'Data Analyst | Excel | Power BI',
@@ -60,6 +71,17 @@ export const TESTIMONIALS_EN: Array<Testimonial> = [
 ];
 
 export const TESTIMONIALS_PT: Array<Testimonial> = [
+  {
+    fullName: 'Hercílio Falcão',
+    profileImg: 'assets/img/hercilio_pic.jpg',
+    jobTitle: 'Análista de Dados Jr | Python | SQL ',
+    relationship: {
+      relationDate: new Date('Apr 22, 2026 00:00:00'),
+      relationDescription:
+        'Diego é um cara excepcional, me ajdou na mudança de back-end para a área de dados lá em abril de 2025, desde então vem me orientando passo a passo sobre o que seguir e o que fazer na minha jornada, sempre compartilha vagas, posts, artigos, blogs, cursos, certificados e principalmente seu conhecimento, uma pessoa excelente para explicar, ajudar, orientar e salvar nos bugs e problemas que aparecem. Diego é uma pessoa muita paciente, compreensiva e acima de tudo, uma pessoa que tem muita empatia e sabe se colocar no lugar do próximo, ele é um verdadeiro mentor, tudo que aprendi até agora e venho construindo se deve muito ao esforço dele em poder me ajudar.',
+    },
+    profileLink: 'https://www.linkedin.com/in/herciliofalcao/',
+  },
   {
     fullName: 'Paulo Henrique',
     profileImg: 'assets/img/paulo_pic.png',
