@@ -6,15 +6,16 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
     title: 'LinkedIn Career Intelligence Lakehouse',
     category: 'Data Engineering Case',
     summary:
-      'End-to-end analytics engineering case that turns LinkedIn exports into a reproducible app with Python, DuckDB, dbt and Streamlit.',
+      'End-to-end data engineering and BI case that turns LinkedIn exports into a reproducible analytics platform with Python, DuckDB, dbt, Streamlit and an executive Power BI dashboard.',
     problem:
       'LinkedIn exports arrive as many disconnected CSV files with uneven structures and low immediate analytical value. The goal was to transform that raw material into a navigable analytics product with technical reliability and executive storytelling.',
-    stack: ['Python', 'DuckDB', 'dbt', 'Streamlit', 'Pytest', 'SQLFluff'],
+    stack: ['Python', 'DuckDB', 'dbt', 'Streamlit', 'Power BI', 'DAX', 'Pytest', 'SQLFluff'],
     architecture: [
       'LinkedIn CSV exports are profiled and standardized in a Python ingestion layer.',
       'Cleaned tables are persisted into a local DuckDB warehouse with bronze-oriented organization.',
       'dbt structures the analytical layer through staging, intermediate and marts models.',
       'A Streamlit app consumes curated marts to present executive KPIs, domain pages and analytical narratives.',
+      'A premium Power BI semantic layer adds historical snapshots, observability metrics and executive HTML/CSS dashboards for portfolio-grade BI storytelling.',
     ],
     screenshots: [
       {
@@ -31,6 +32,11 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
         src: 'assets/projects/lakehouse-health-highlight.svg',
         alt: 'Lakehouse health page',
         caption: 'Operational health page showing coverage, inventory and pipeline-readiness indicators.',
+      },
+      {
+        src: 'assets/projects/showcase/linkedin_lakehouse_dashboard_showcase.png',
+        alt: 'Executive Power BI dashboard',
+        caption: 'Executive Power BI layer with premium KPIs, governed historical snapshots and observability-driven monitoring.',
       },
     ],
     metrics: [
@@ -51,6 +57,9 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
       },
     ],
     githubUrl: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
+    appUrl: 'https://linkedin-career-intelligence-lakehouse-demo.streamlit.app/',
+    dashboardUrl:
+      'https://app.powerbi.com/view?r=eyJrIjoiZjRhZDVlMzgtOWU5Mi00ZTM4LTgwYjAtYTlhNjA0NzU4M2Q0IiwidCI6Ijg3OGFhNjMyLTM4Y2MtNDZhZS1hNTYzLTEwZGQ1YzIyMjYxNSJ9',
   },
   {
     slug: 'data-dashboard',
@@ -285,15 +294,16 @@ export const PROJECT_CASES_PT: ProjectCase[] = [
     title: 'LinkedIn Career Intelligence Lakehouse',
     category: 'Case de Engenharia de Dados',
     summary:
-      'Case end-to-end de analytics engineering que transforma exports do LinkedIn em um app reproduzível com Python, DuckDB, dbt e Streamlit.',
+      'Case end-to-end de engenharia de dados e BI que transforma exports do LinkedIn em uma plataforma analítica reproduzível com Python, DuckDB, dbt, Streamlit e dashboard executivo em Power BI.',
     problem:
       'Os exports do LinkedIn chegam como vários CSVs desconectados, com estruturas heterogêneas e pouco valor analítico imediato. O objetivo foi transformar esse material bruto em um produto analítico navegável, confiável e com storytelling executivo.',
-    stack: ['Python', 'DuckDB', 'dbt', 'Streamlit', 'Pytest', 'SQLFluff'],
+    stack: ['Python', 'DuckDB', 'dbt', 'Streamlit', 'Power BI', 'DAX', 'Pytest', 'SQLFluff'],
     architecture: [
       'Os CSVs do LinkedIn passam por profiling e padronização em uma camada de ingestão em Python.',
       'As tabelas limpas são persistidas em um warehouse local em DuckDB com organização orientada a bronze.',
       'O dbt estrutura a camada analítica com modelos staging, intermediate e marts.',
       'Um app em Streamlit consome os marts para apresentar KPIs executivos, páginas por domínio e narrativas analíticas.',
+      'Uma camada semântica premium em Power BI adiciona snapshots históricos, métricas de observability e dashboards executivos em HTML/CSS para storytelling de BI.',
     ],
     screenshots: [
       {
@@ -310,6 +320,11 @@ export const PROJECT_CASES_PT: ProjectCase[] = [
         src: 'assets/projects/lakehouse-health-highlight.svg',
         alt: 'Health do Lakehouse',
         caption: 'Página operacional mostrando cobertura, inventário e indicadores de prontidão do pipeline.',
+      },
+      {
+        src: 'assets/projects/showcase/linkedin_lakehouse_dashboard_showcase.png',
+        alt: 'Dashboard executivo em Power BI',
+        caption: 'Camada executiva em Power BI com KPIs premium, snapshots históricos governados e monitoramento orientado por observability.',
       },
     ],
     metrics: [
@@ -330,6 +345,9 @@ export const PROJECT_CASES_PT: ProjectCase[] = [
       },
     ],
     githubUrl: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
+    appUrl: 'https://linkedin-career-intelligence-lakehouse-demo.streamlit.app/',
+    dashboardUrl:
+      'https://app.powerbi.com/view?r=eyJrIjoiZjRhZDVlMzgtOWU5Mi00ZTM4LTgwYjAtYTlhNjA0NzU4M2Q0IiwidCI6Ijg3OGFhNjMyLTM4Y2MtNDZhZS1hNTYzLTEwZGQ1YzIyMjYxNSJ9',
   },
   {
     slug: 'data-dashboard',

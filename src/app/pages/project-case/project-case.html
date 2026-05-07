@@ -14,6 +14,16 @@
           <a [href]="caseItem.githubUrl" target="_blank" rel="noopener noreferrer" class="case-button primary">
             GitHub
           </a>
+          @if (caseItem.appUrl) {
+            <a [href]="caseItem.appUrl" target="_blank" rel="noopener noreferrer" class="case-button secondary">
+              {{ currentLanguage() === 'pt' ? 'App / Streamlit' : 'App / Streamlit' }}
+            </a>
+          }
+          @if (caseItem.dashboardUrl) {
+            <a [href]="caseItem.dashboardUrl" target="_blank" rel="noopener noreferrer" class="case-button secondary">
+              {{ currentLanguage() === 'pt' ? 'Dashboard / Power BI' : 'Dashboard / Power BI' }}
+            </a>
+          }
           <a href="/#contact" class="case-button secondary">
             {{ currentLanguage() === 'pt' ? 'Falar sobre o projeto' : 'Talk about this project' }}
           </a>

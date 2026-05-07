@@ -6,14 +6,14 @@ const PROJECTS_DATA_EN: Array<Project> = [
     slug: 'linkedin-career-intelligence-lakehouse',
     title: 'LinkedIn Career Intelligence Lakehouse',
     description:
-      'End-to-end data engineering case that transforms LinkedIn exports into an analytics app with Python ingestion, DuckDB warehouse, dbt modeling, and Streamlit storytelling.',
+      'End-to-end data engineering and BI case that transforms LinkedIn exports into an analytics platform with Python ingestion, DuckDB warehouse, dbt modeling, Streamlit storytelling, and an executive Power BI dashboard.',
     viewLink:
       'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
     appLink: 'https://linkedin-career-intelligence-lakehouse-demo.streamlit.app/',
     dashboardLink:
       'https://app.powerbi.com/view?r=eyJrIjoiZjRhZDVlMzgtOWU5Mi00ZTM4LTgwYjAtYTlhNjA0NzU4M2Q0IiwidCI6Ijg3OGFhNjMyLTM4Y2MtNDZhZS1hNTYzLTEwZGQ1YzIyMjYxNSJ9',
     sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
-    imageUrl: 'assets/projects/linkedin_lakehouse_dashboard_thumb.png',
+    imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
   },
   {
     slug: 'data-dashboard',
@@ -66,14 +66,14 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     slug: 'linkedin-career-intelligence-lakehouse',
     title: 'LinkedIn Career Intelligence Lakehouse',
     description:
-      'Case end-to-end de engenharia de dados que transforma exportações do LinkedIn em um app analítico com ingestão em Python, warehouse em DuckDB, modelagem em dbt e storytelling em Streamlit.',
+      'Case end-to-end de engenharia de dados e BI que transforma exports do LinkedIn em uma plataforma analítica com ingestão em Python, DuckDB, modelagem dbt, storytelling em Streamlit e dashboard executivo em Power BI.',
     viewLink:
       'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
     appLink: 'https://linkedin-career-intelligence-lakehouse-demo.streamlit.app/',
     dashboardLink:
       'https://app.powerbi.com/view?r=eyJrIjoiZjRhZDVlMzgtOWU5Mi00ZTM4LTgwYjAtYTlhNjA0NzU4M2Q0IiwidCI6Ijg3OGFhNjMyLTM4Y2MtNDZhZS1hNTYzLTEwZGQ1YzIyMjYxNSJ9',
     sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
-    imageUrl: 'assets/projects/linkedin_lakehouse_dashboard_thumb.png',
+    imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
   },
   {
     slug: 'data-dashboard',

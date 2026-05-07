@@ -21,4 +21,6 @@ export interface ProjectCase {
   screenshots: ProjectCaseScreenshot[];
   metrics: ProjectCaseMetric[];
   githubUrl: string;
+  appUrl?: string;
+  dashboardUrl?: string;
 }
