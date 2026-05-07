@@ -10,8 +10,10 @@ const PROJECTS_DATA_EN: Array<Project> = [
     viewLink:
       'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
     appLink: 'https://linkedin-career-intelligence-lakehouse-demo.streamlit.app/',
+    dashboardLink:
+      'https://app.powerbi.com/view?r=eyJrIjoiZjRhZDVlMzgtOWU5Mi00ZTM4LTgwYjAtYTlhNjA0NzU4M2Q0IiwidCI6Ijg3OGFhNjMyLTM4Y2MtNDZhZS1hNTYzLTEwZGQ1YzIyMjYxNSJ9',
     sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
-    imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
+    imageUrl: 'assets/projects/linkedin_lakehouse_dashboard_thumb.png',
   },
   {
     slug: 'data-dashboard',
@@ -68,8 +70,10 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     viewLink:
       'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
     appLink: 'https://linkedin-career-intelligence-lakehouse-demo.streamlit.app/',
+    dashboardLink:
+      'https://app.powerbi.com/view?r=eyJrIjoiZjRhZDVlMzgtOWU5Mi00ZTM4LTgwYjAtYTlhNjA0NzU4M2Q0IiwidCI6Ijg3OGFhNjMyLTM4Y2MtNDZhZS1hNTYzLTEwZGQ1YzIyMjYxNSJ9',
     sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
-    imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
+    imageUrl: 'assets/projects/linkedin_lakehouse_dashboard_thumb.png',
   },
   {
     slug: 'data-dashboard',

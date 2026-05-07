@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   viewLink: string;
   appLink?: string;
+  dashboardLink?: string;
   sourceCode: string;
   imageUrl: string;
 }

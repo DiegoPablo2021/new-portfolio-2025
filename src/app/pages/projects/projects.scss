@@ -95,6 +95,23 @@
   padding-top: 1.5rem;
 }
 
+.project-footer--stacked {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.project-link-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link-row--split {
+  .project-link {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;
@@ -113,6 +130,11 @@
   &:hover {
     background-color: var.$button-hover-light;
   }
+}
+
+.project-link--full {
+  width: 100%;
+  flex: 1 1 100%;
 }
 
 .projects-section.dark {
