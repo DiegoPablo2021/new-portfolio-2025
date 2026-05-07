@@ -1,100 +1,62 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="140" y1="80" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220" />
-      <stop offset="1" stop-color="#07111C" />
+    <linearGradient id="sales-bg" x1="120" y1="76" x2="1492" y2="852" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B101C"/>
+      <stop offset="1" stop-color="#140E16"/>
     </linearGradient>
-    <linearGradient id="panel" x1="910" y1="172" x2="1388" y2="648" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#112136" />
-      <stop offset="1" stop-color="#0A1220" />
+    <linearGradient id="sales-accent" x1="904" y1="138" x2="1460" y2="674" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="0.48" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#FB7185"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#38BDF8" />
-      <stop offset="1" stop-color="#60A5FA" />
-    </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="18" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
   </defs>
 
-  <rect width="1600" height="900" rx="36" fill="url(#bg)" />
-  <g opacity="0.12">
-    <path d="M120 176H1480" stroke="#2563EB" />
-    <path d="M120 248H1480" stroke="#2563EB" />
-    <path d="M120 320H1480" stroke="#2563EB" />
-    <path d="M120 392H1480" stroke="#2563EB" />
-    <path d="M120 464H1480" stroke="#2563EB" />
-    <path d="M120 536H1480" stroke="#2563EB" />
-    <path d="M120 608H1480" stroke="#2563EB" />
-    <path d="M120 680H1480" stroke="#2563EB" />
-    <path d="M248 108V792" stroke="#2563EB" />
-    <path d="M356 108V792" stroke="#2563EB" />
-    <path d="M464 108V792" stroke="#2563EB" />
-    <path d="M572 108V792" stroke="#2563EB" />
-    <path d="M680 108V792" stroke="#2563EB" />
-  </g>
+  <rect width="1600" height="900" rx="36" fill="url(#sales-bg)"/>
+  <rect x="44" y="44" width="1512" height="812" rx="28" stroke="#3B2D2B"/>
 
-  <circle cx="1406" cy="166" r="118" fill="#2563EB" opacity="0.12" filter="url(#glow)" />
-  <circle cx="226" cy="718" r="144" fill="#38BDF8" opacity="0.1" filter="url(#glow)" />
-
-  <text x="132" y="172" fill="#38BDF8" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.18em">
-    POWER BI SALES STRATEGY
+  <text x="126" y="164" fill="#FBBF24" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.16em">
+    REVENUE AND SALES ANALYTICS
   </text>
-  <text x="132" y="292" fill="#F8FAFC" font-size="78" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
+  <text x="126" y="286" fill="#F8FAFC" font-size="82" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
     Strategic Sales Analysis
   </text>
-  <text x="132" y="368" fill="#94A3B8" font-size="36" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
-    Executive pricing, promotion and product performance intelligence
+  <text x="126" y="362" fill="#A5B4C8" font-size="35" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
+    Pricing, promotion and product performance for executive decision support
   </text>
 
   <g>
-    <rect x="132" y="438" width="178" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="166" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Power BI</text>
-    <rect x="328" y="438" width="154" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="370" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">DAX</text>
-    <rect x="500" y="438" width="182" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="540" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Pricing</text>
+    <rect x="126" y="432" width="158" height="52" rx="26" fill="#17151A" stroke="#4B3830"/>
+    <text x="168" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Power BI</text>
+    <rect x="302" y="432" width="146" height="52" rx="26" fill="#17151A" stroke="#4B3830"/>
+    <text x="340" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Sales</text>
+    <rect x="466" y="432" width="170" height="52" rx="26" fill="#17151A" stroke="#4B3830"/>
+    <text x="505" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Pricing</text>
   </g>
 
-  <rect x="850" y="136" width="700" height="452" rx="34" fill="#08111D" stroke="url(#accent)" stroke-width="2" />
-  <rect x="882" y="176" width="640" height="372" rx="22" fill="url(#panel)" />
-  <rect x="918" y="212" width="126" height="92" rx="18" fill="#E0F2FE" />
-  <rect x="1062" y="212" width="126" height="92" rx="18" fill="#F8FAFC" />
-  <rect x="1206" y="212" width="126" height="92" rx="18" fill="#E0F2FE" />
-  <rect x="1350" y="212" width="126" height="92" rx="18" fill="#F8FAFC" />
-  <text x="944" y="244" fill="#475569" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Sales</text>
-  <text x="1088" y="244" fill="#475569" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Margin</text>
-  <text x="1232" y="244" fill="#475569" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Net Sales</text>
-  <text x="1376" y="244" fill="#475569" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">YTD</text>
-  <text x="944" y="281" fill="#0F172A" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">R$ 2.60B</text>
-  <text x="1088" y="281" fill="#0F172A" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">53.7%</text>
-  <text x="1232" y="281" fill="#0F172A" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">R$ 2.39B</text>
-  <text x="1376" y="281" fill="#0F172A" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">4089%</text>
+  <g>
+    <rect x="850" y="132" width="694" height="552" rx="32" fill="#0A111B" stroke="url(#sales-accent)" stroke-width="2"/>
+    <rect x="894" y="182" width="300" height="454" rx="24" fill="#101722" stroke="#443330"/>
+    <rect x="1220" y="182" width="280" height="210" rx="24" fill="#101722" stroke="#443330"/>
+    <rect x="1220" y="426" width="280" height="210" rx="24" fill="#101722" stroke="#443330"/>
 
-  <rect x="918" y="336" width="248" height="176" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <path d="M950 474L994 416L1038 446L1086 404L1130 432" stroke="#60A5FA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="926" y="222" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Revenue Lift</text>
+    <path d="M948 560L1008 500L1062 518L1126 436L1172 450" stroke="#F59E0B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M948 574H1166" stroke="#3B424F"/>
+    <path d="M952 308L1000 286L1048 296L1096 252L1146 266" stroke="#FB7185" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="1126" cy="436" r="8" fill="#FDE68A"/>
+    <circle cx="1172" cy="450" r="8" fill="#FCA5A5"/>
 
-  <rect x="1192" y="336" width="284" height="176" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <rect x="1224" y="372" width="94" height="24" rx="12" fill="#38BDF8" opacity="0.65" />
-  <rect x="1224" y="408" width="174" height="24" rx="12" fill="#1D4ED8" opacity="0.75" />
-  <rect x="1224" y="444" width="132" height="24" rx="12" fill="#93C5FD" opacity="0.8" />
-  <rect x="1408" y="372" width="30" height="96" rx="14" fill="#E2E8F0" opacity="0.9" />
+    <text x="1250" y="222" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Promotion Mix</text>
+    <rect x="1254" y="256" width="36" height="104" rx="10" fill="#F59E0B"/>
+    <rect x="1310" y="232" width="36" height="128" rx="10" fill="#F97316"/>
+    <rect x="1366" y="278" width="36" height="82" rx="10" fill="#FB7185"/>
+    <rect x="1422" y="208" width="36" height="152" rx="10" fill="#FCD34D"/>
 
-  <g opacity="0.85">
-    <rect x="882" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="914" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Performance</text>
-    <text x="914" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Sales Lens</text>
-
-    <rect x="1104" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="1136" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Promotion</text>
-    <text x="1136" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Discount View</text>
-
-    <rect x="1326" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="1358" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Portfolio</text>
-    <text x="1358" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Product KPIs</text>
+    <text x="1250" y="466" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Product Focus</text>
+    <rect x="1254" y="500" width="204" height="92" rx="16" fill="#171D2A"/>
+    <path d="M1278 562H1438" stroke="#334155"/>
+    <path d="M1292 562V526L1332 496L1374 520L1418 472" stroke="#FB7185" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1332" cy="496" r="7" fill="#FDE68A"/>
+    <circle cx="1418" cy="472" r="7" fill="#FCA5A5"/>
   </g>
 </svg>

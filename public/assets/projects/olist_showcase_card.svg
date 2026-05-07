@@ -1,99 +1,72 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="140" y1="80" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220" />
-      <stop offset="1" stop-color="#07111C" />
+    <linearGradient id="olist-bg" x1="110" y1="80" x2="1490" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1220"/>
+      <stop offset="1" stop-color="#091523"/>
     </linearGradient>
-    <linearGradient id="panel" x1="910" y1="172" x2="1388" y2="648" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0E1E34" />
-      <stop offset="1" stop-color="#09121D" />
+    <linearGradient id="olist-accent" x1="890" y1="130" x2="1478" y2="666" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F97316"/>
+      <stop offset="0.45" stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#22D3EE"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#38BDF8" />
-      <stop offset="1" stop-color="#22C55E" />
-    </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="18" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
   </defs>
 
-  <rect width="1600" height="900" rx="36" fill="url(#bg)" />
-  <g opacity="0.12">
-    <path d="M120 176H1480" stroke="#22C55E" />
-    <path d="M120 248H1480" stroke="#22C55E" />
-    <path d="M120 320H1480" stroke="#22C55E" />
-    <path d="M120 392H1480" stroke="#22C55E" />
-    <path d="M120 464H1480" stroke="#22C55E" />
-    <path d="M120 536H1480" stroke="#22C55E" />
-    <path d="M120 608H1480" stroke="#22C55E" />
-    <path d="M120 680H1480" stroke="#22C55E" />
-    <path d="M248 108V792" stroke="#22C55E" />
-    <path d="M356 108V792" stroke="#22C55E" />
-    <path d="M464 108V792" stroke="#22C55E" />
-    <path d="M572 108V792" stroke="#22C55E" />
-    <path d="M680 108V792" stroke="#22C55E" />
-  </g>
+  <rect width="1600" height="900" rx="36" fill="url(#olist-bg)"/>
+  <rect x="44" y="44" width="1512" height="812" rx="28" stroke="#24354B"/>
 
-  <circle cx="1408" cy="170" r="118" fill="#22C55E" opacity="0.1" filter="url(#glow)" />
-  <circle cx="220" cy="720" r="144" fill="#38BDF8" opacity="0.1" filter="url(#glow)" />
-
-  <text x="132" y="172" fill="#38BDF8" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.18em">
-    ANALYTICS ENGINEERING + BI
+  <text x="124" y="164" fill="#FB923C" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.16em">
+    E-COMMERCE DATA ENGINEERING
   </text>
-  <text x="132" y="292" fill="#F8FAFC" font-size="78" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
+  <text x="124" y="286" fill="#F8FAFC" font-size="84" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
     Olist Analytics
   </text>
-  <text x="132" y="368" fill="#94A3B8" font-size="36" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
-    ETL, warehouse modeling and BI consumption for Brazilian e-commerce
+  <text x="124" y="362" fill="#A5B4C8" font-size="35" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
+    Marketplace data stack connecting orders, logistics, sellers and BI outputs
   </text>
 
   <g>
-    <rect x="132" y="438" width="170" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="166" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Python</text>
-    <rect x="320" y="438" width="200" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="362" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">PostgreSQL</text>
-    <rect x="538" y="438" width="178" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="580" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Power BI</text>
+    <rect x="124" y="432" width="142" height="52" rx="26" fill="#101927" stroke="#30465F"/>
+    <text x="162" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">ETL</text>
+    <rect x="284" y="432" width="188" height="52" rx="26" fill="#101927" stroke="#30465F"/>
+    <text x="326" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">PostgreSQL</text>
+    <rect x="490" y="432" width="148" height="52" rx="26" fill="#101927" stroke="#30465F"/>
+    <text x="523" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Retail</text>
   </g>
 
-  <rect x="850" y="136" width="700" height="452" rx="34" fill="#08111D" stroke="url(#accent)" stroke-width="2" />
-  <rect x="882" y="176" width="640" height="372" rx="22" fill="url(#panel)" />
-  <rect x="918" y="212" width="184" height="112" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <text x="950" y="248" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Ingestion</text>
-  <text x="950" y="298" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">ETL</text>
-  <rect x="1120" y="212" width="184" height="112" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <text x="1152" y="248" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Warehouse</text>
-  <text x="1152" y="298" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Postgres</text>
-  <rect x="1322" y="212" width="154" height="112" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <text x="1354" y="248" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">BI</text>
-  <text x="1354" y="298" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Power BI</text>
+  <g>
+    <rect x="850" y="132" width="694" height="552" rx="32" fill="#08111D" stroke="url(#olist-accent)" stroke-width="2"/>
+    <rect x="894" y="184" width="258" height="196" rx="24" fill="#0D1826" stroke="#3A4B5F"/>
+    <rect x="894" y="410" width="258" height="228" rx="24" fill="#0D1826" stroke="#3A4B5F"/>
+    <rect x="1180" y="184" width="320" height="454" rx="24" fill="#0D1826" stroke="#3A4B5F"/>
 
-  <rect x="930" y="364" width="120" height="64" rx="18" fill="#0F172A" stroke="#1E3A8A" />
-  <rect x="1128" y="364" width="120" height="64" rx="18" fill="#0F172A" stroke="#1E3A8A" />
-  <rect x="1326" y="364" width="120" height="64" rx="18" fill="#0F172A" stroke="#1E3A8A" />
-  <path d="M1050 396H1128" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" />
-  <path d="M1248 396H1326" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" />
-  <path d="M996 428V470H1386V428" stroke="#22C55E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="918" y="452" width="560" height="56" rx="18" fill="#0B1220" stroke="#1E3A8A" />
-  <rect x="948" y="472" width="122" height="16" rx="8" fill="#38BDF8" opacity="0.8" />
-  <rect x="1098" y="472" width="168" height="16" rx="8" fill="#22C55E" opacity="0.8" />
-  <rect x="1294" y="472" width="128" height="16" rx="8" fill="#93C5FD" opacity="0.7" />
+    <text x="930" y="224" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Commerce Events</text>
+    <rect x="934" y="256" width="74" height="54" rx="14" fill="#3A1D0B" stroke="#F97316"/>
+    <rect x="1024" y="256" width="74" height="54" rx="14" fill="#3A1D0B" stroke="#F97316"/>
+    <rect x="979" y="326" width="74" height="54" rx="14" fill="#3A1D0B" stroke="#F97316"/>
+    <path d="M1008 338L1040 310" stroke="#FDBA74" stroke-width="4" stroke-linecap="round"/>
+    <path d="M992 318L970 300" stroke="#FDBA74" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="972" cy="284" r="6" fill="#FDBA74"/>
+    <circle cx="1060" cy="284" r="6" fill="#FDBA74"/>
+    <circle cx="1016" cy="354" r="6" fill="#FDBA74"/>
 
-  <g opacity="0.85">
-    <rect x="882" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="914" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Engineering</text>
-    <text x="914" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">ETL Layer</text>
+    <text x="930" y="452" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Warehouse Core</text>
+    <ellipse cx="1022" cy="538" rx="84" ry="44" fill="#151D32" stroke="#22D3EE" stroke-width="2"/>
+    <path d="M938 524C938 506 976 492 1022 492C1068 492 1106 506 1106 524V554C1106 572 1068 586 1022 586C976 586 938 572 938 554V524Z" stroke="#8BE9F4" stroke-width="2"/>
+    <path d="M938 540C938 558 976 572 1022 572C1068 572 1106 558 1106 540" stroke="#8BE9F4" stroke-width="2"/>
+    <text x="985" y="544" fill="#E2E8F0" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">marts</text>
 
-    <rect x="1104" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="1136" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Warehouse</text>
-    <text x="1136" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">SQL Model</text>
+    <text x="1216" y="224" fill="#F8FAFC" font-size="22" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Executive Layer</text>
+    <rect x="1216" y="256" width="248" height="120" rx="18" fill="#111D30"/>
+    <path d="M1244 340L1288 308L1330 320L1384 286L1436 300" stroke="#FB7185" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1244 354H1452" stroke="#2E465C"/>
+    <rect x="1216" y="404" width="248" height="182" rx="18" fill="#111D30"/>
+    <rect x="1246" y="520" width="30" height="40" rx="8" fill="#22D3EE"/>
+    <rect x="1296" y="486" width="30" height="74" rx="8" fill="#38BDF8"/>
+    <rect x="1346" y="456" width="30" height="104" rx="8" fill="#FB7185"/>
+    <rect x="1396" y="424" width="30" height="136" rx="8" fill="#F97316"/>
+    <text x="1244" y="454" fill="#A5B4C8" font-size="16" font-family="Segoe UI, Arial, sans-serif">orders, freight, sellers</text>
 
-    <rect x="1326" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="1358" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Executive</text>
-    <text x="1358" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">BI Layer</text>
+    <path d="M1152 282H1180" stroke="#F97316" stroke-width="6" stroke-linecap="round"/>
+    <path d="M1152 536H1180" stroke="#22D3EE" stroke-width="6" stroke-linecap="round"/>
   </g>
 </svg>

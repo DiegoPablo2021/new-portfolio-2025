@@ -1,103 +1,90 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="140" y1="80" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220" />
-      <stop offset="1" stop-color="#06111C" />
+    <linearGradient id="dash-bg" x1="112" y1="88" x2="1496" y2="844" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111E"/>
+      <stop offset="1" stop-color="#071827"/>
     </linearGradient>
-    <linearGradient id="panel" x1="910" y1="172" x2="1388" y2="648" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#132235" />
-      <stop offset="1" stop-color="#0B1322" />
+    <linearGradient id="dash-cyan" x1="918" y1="154" x2="1442" y2="672" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#22D3EE"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#23B7FF" />
-      <stop offset="1" stop-color="#6EE7FF" />
-    </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="18" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <radialGradient id="dash-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1238 196) rotate(139.673) scale(348.417 311.078)">
+      <stop stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <rect width="1600" height="900" rx="36" fill="url(#bg)" />
-  <g opacity="0.13">
-    <path d="M120 176H1480" stroke="#1E40AF" />
-    <path d="M120 248H1480" stroke="#1E40AF" />
-    <path d="M120 320H1480" stroke="#1E40AF" />
-    <path d="M120 392H1480" stroke="#1E40AF" />
-    <path d="M120 464H1480" stroke="#1E40AF" />
-    <path d="M120 536H1480" stroke="#1E40AF" />
-    <path d="M120 608H1480" stroke="#1E40AF" />
-    <path d="M120 680H1480" stroke="#1E40AF" />
-    <path d="M248 108V792" stroke="#1E40AF" />
-    <path d="M356 108V792" stroke="#1E40AF" />
-    <path d="M464 108V792" stroke="#1E40AF" />
-    <path d="M572 108V792" stroke="#1E40AF" />
-    <path d="M680 108V792" stroke="#1E40AF" />
+  <rect width="1600" height="900" rx="36" fill="url(#dash-bg)"/>
+  <rect x="44" y="44" width="1512" height="812" rx="28" stroke="#16314B"/>
+  <circle cx="1242" cy="214" r="208" fill="url(#dash-glow)"/>
+
+  <g opacity="0.12">
+    <path d="M116 174H1482" stroke="#1C3B5A"/>
+    <path d="M116 258H1482" stroke="#1C3B5A"/>
+    <path d="M116 342H1482" stroke="#1C3B5A"/>
+    <path d="M116 426H1482" stroke="#1C3B5A"/>
+    <path d="M116 510H1482" stroke="#1C3B5A"/>
+    <path d="M116 594H1482" stroke="#1C3B5A"/>
+    <path d="M116 678H1482" stroke="#1C3B5A"/>
   </g>
 
-  <circle cx="1404" cy="164" r="118" fill="#1D4ED8" opacity="0.12" filter="url(#glow)" />
-  <circle cx="236" cy="712" r="144" fill="#06B6D4" opacity="0.1" filter="url(#glow)" />
-
-  <text x="132" y="172" fill="#38BDF8" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.18em">
-    POWER BI SALES INTELLIGENCE
+  <text x="126" y="166" fill="#38BDF8" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.16em">
+    KPI AND REVENUE COMMAND
   </text>
-  <text x="132" y="292" fill="#F8FAFC" font-size="86" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
+  <text x="126" y="286" fill="#F8FAFC" font-size="86" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
     Data Dashboard
   </text>
-  <text x="132" y="368" fill="#94A3B8" font-size="36" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
-    Executive commercial layer for revenue, pricing and KPI control
+  <text x="126" y="362" fill="#94A3B8" font-size="35" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
+    Business intelligence layer for pricing, revenue, margin and trend control
   </text>
 
   <g>
-    <rect x="132" y="438" width="182" height="54" rx="27" fill="#0F172A" stroke="#1F3A8A" />
-    <text x="166" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Power BI</text>
-    <rect x="332" y="438" width="142" height="54" rx="27" fill="#0F172A" stroke="#1F3A8A" />
-    <text x="373" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">DAX</text>
-    <rect x="492" y="438" width="186" height="54" rx="27" fill="#0F172A" stroke="#1F3A8A" />
-    <text x="532" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Revenue</text>
+    <rect x="126" y="432" width="168" height="52" rx="26" fill="#0B1725" stroke="#204162"/>
+    <text x="171" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Power BI</text>
+    <rect x="312" y="432" width="116" height="52" rx="26" fill="#0B1725" stroke="#204162"/>
+    <text x="351" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">DAX</text>
+    <rect x="446" y="432" width="166" height="52" rx="26" fill="#0B1725" stroke="#204162"/>
+    <text x="483" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Revenue</text>
   </g>
 
-  <rect x="850" y="136" width="700" height="452" rx="34" fill="#08111D" stroke="url(#accent)" stroke-width="2" />
-  <rect x="882" y="176" width="640" height="372" rx="22" fill="url(#panel)" />
-  <rect x="918" y="212" width="126" height="92" rx="18" fill="#E0F2FE" />
-  <rect x="1062" y="212" width="126" height="92" rx="18" fill="#F8FAFC" />
-  <rect x="1206" y="212" width="126" height="92" rx="18" fill="#E0F2FE" />
-  <rect x="1350" y="212" width="126" height="92" rx="18" fill="#F8FAFC" />
-  <text x="944" y="244" fill="#475569" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Sales</text>
-  <text x="1088" y="244" fill="#475569" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Margin</text>
-  <text x="1232" y="244" fill="#475569" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Net Rev.</text>
-  <text x="1376" y="244" fill="#475569" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Growth</text>
-  <text x="944" y="281" fill="#0F172A" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">R$ 2.39M</text>
-  <text x="1088" y="281" fill="#0F172A" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">53.7%</text>
-  <text x="1232" y="281" fill="#0F172A" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">R$ 1.82M</text>
-  <text x="1376" y="281" fill="#0F172A" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">+12.4%</text>
+  <g>
+    <rect x="850" y="132" width="694" height="552" rx="32" fill="#061220" stroke="url(#dash-cyan)" stroke-width="2"/>
+    <rect x="886" y="170" width="626" height="120" rx="22" fill="#0B1828"/>
+    <rect x="918" y="198" width="132" height="64" rx="16" fill="#E0F2FE"/>
+    <rect x="1068" y="198" width="132" height="64" rx="16" fill="#DCFCE7"/>
+    <rect x="1218" y="198" width="132" height="64" rx="16" fill="#FEF3C7"/>
+    <rect x="1368" y="198" width="112" height="64" rx="16" fill="#F8FAFC"/>
+    <text x="942" y="223" fill="#475569" font-size="17" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Revenue</text>
+    <text x="1094" y="223" fill="#475569" font-size="17" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Margin</text>
+    <text x="1248" y="223" fill="#475569" font-size="17" font-weight="700" font-family="Segoe UI, Arial, sans-serif">KPI Hit</text>
+    <text x="1398" y="223" fill="#475569" font-size="17" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Trend</text>
+    <text x="938" y="252" fill="#0F172A" font-size="26" font-weight="800" font-family="Segoe UI, Arial, sans-serif">R$ 2.39M</text>
+    <text x="1091" y="252" fill="#0F172A" font-size="26" font-weight="800" font-family="Segoe UI, Arial, sans-serif">53.7%</text>
+    <text x="1249" y="252" fill="#0F172A" font-size="26" font-weight="800" font-family="Segoe UI, Arial, sans-serif">92%</text>
+    <text x="1393" y="252" fill="#0F172A" font-size="26" font-weight="800" font-family="Segoe UI, Arial, sans-serif">+12%</text>
 
-  <rect x="918" y="334" width="248" height="174" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <path d="M952 470L1000 422L1042 448L1090 378L1134 392" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M952 456L1000 430L1042 438L1090 396L1134 404" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" />
+    <rect x="918" y="326" width="270" height="256" rx="24" fill="#0A1726" stroke="#1E3A5A"/>
+    <path d="M950 532L1000 486L1052 504L1110 430L1154 448" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M950 518L1000 494L1052 492L1110 452L1154 456" stroke="#22D3EE" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+    <circle cx="1000" cy="486" r="7" fill="#E0F2FE"/>
+    <circle cx="1110" cy="430" r="7" fill="#DCFCE7"/>
+    <circle cx="1154" cy="448" r="7" fill="#FEF3C7"/>
 
-  <rect x="1192" y="334" width="284" height="174" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <rect x="1224" y="372" width="78" height="24" rx="12" fill="#1D4ED8" opacity="0.55" />
-  <rect x="1224" y="408" width="152" height="24" rx="12" fill="#38BDF8" opacity="0.8" />
-  <rect x="1224" y="444" width="118" height="24" rx="12" fill="#93C5FD" opacity="0.65" />
-  <rect x="1388" y="372" width="50" height="24" rx="12" fill="#E2E8F0" opacity="0.9" />
-  <rect x="1388" y="408" width="50" height="24" rx="12" fill="#E2E8F0" opacity="0.9" />
-  <rect x="1388" y="444" width="50" height="24" rx="12" fill="#E2E8F0" opacity="0.9" />
+    <rect x="1218" y="326" width="262" height="256" rx="24" fill="#0A1726" stroke="#1E3A5A"/>
+    <rect x="1250" y="470" width="34" height="72" rx="10" fill="#38BDF8"/>
+    <rect x="1300" y="430" width="34" height="112" rx="10" fill="#22D3EE"/>
+    <rect x="1350" y="388" width="34" height="154" rx="10" fill="#60A5FA"/>
+    <rect x="1400" y="344" width="34" height="198" rx="10" fill="#FBBF24"/>
+    <path d="M1250 516H1458" stroke="#29455E"/>
+    <path d="M1250 462H1458" stroke="#29455E" opacity="0.6"/>
+    <path d="M1250 408H1458" stroke="#29455E" opacity="0.4"/>
 
-  <g opacity="0.85">
-    <rect x="882" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="914" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Semantic layer</text>
-    <text x="914" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Revenue KPIs</text>
-
-    <rect x="1104" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="1136" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Commercial</text>
-    <text x="1136" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Pricing Lens</text>
-
-    <rect x="1326" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="1358" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Executive</text>
-    <text x="1358" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Decision BI</text>
+    <rect x="918" y="616" width="562" height="40" rx="20" fill="#0E1E2E"/>
+    <circle cx="948" cy="636" r="8" fill="#38BDF8"/>
+    <rect x="972" y="628" width="120" height="16" rx="8" fill="#113450"/>
+    <circle cx="1134" cy="636" r="8" fill="#22D3EE"/>
+    <rect x="1158" y="628" width="138" height="16" rx="8" fill="#113450"/>
+    <circle cx="1334" cy="636" r="8" fill="#FBBF24"/>
+    <rect x="1358" y="628" width="88" height="16" rx="8" fill="#113450"/>
   </g>
 </svg>

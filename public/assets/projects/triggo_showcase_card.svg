@@ -1,100 +1,91 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="140" y1="80" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220" />
-      <stop offset="1" stop-color="#07101A" />
+    <linearGradient id="triggo-bg" x1="126" y1="84" x2="1482" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0F1E"/>
+      <stop offset="1" stop-color="#110A1A"/>
     </linearGradient>
-    <linearGradient id="panel" x1="910" y1="172" x2="1388" y2="648" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0D1D31" />
-      <stop offset="1" stop-color="#09111D" />
+    <linearGradient id="triggo-accent" x1="950" y1="148" x2="1436" y2="666" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.48" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#A3E635"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#22D3EE" />
-      <stop offset="1" stop-color="#3B82F6" />
-    </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="18" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
   </defs>
 
-  <rect width="1600" height="900" rx="36" fill="url(#bg)" />
-  <g opacity="0.12">
-    <path d="M120 176H1480" stroke="#0EA5E9" />
-    <path d="M120 248H1480" stroke="#0EA5E9" />
-    <path d="M120 320H1480" stroke="#0EA5E9" />
-    <path d="M120 392H1480" stroke="#0EA5E9" />
-    <path d="M120 464H1480" stroke="#0EA5E9" />
-    <path d="M120 536H1480" stroke="#0EA5E9" />
-    <path d="M120 608H1480" stroke="#0EA5E9" />
-    <path d="M120 680H1480" stroke="#0EA5E9" />
-    <path d="M248 108V792" stroke="#0EA5E9" />
-    <path d="M356 108V792" stroke="#0EA5E9" />
-    <path d="M464 108V792" stroke="#0EA5E9" />
-    <path d="M572 108V792" stroke="#0EA5E9" />
-    <path d="M680 108V792" stroke="#0EA5E9" />
+  <rect width="1600" height="900" rx="36" fill="url(#triggo-bg)"/>
+  <rect x="44" y="44" width="1512" height="812" rx="28" stroke="#2A2240"/>
+
+  <g opacity="0.1">
+    <path d="M108 170H1492" stroke="#2D335C"/>
+    <path d="M108 262H1492" stroke="#2D335C"/>
+    <path d="M108 354H1492" stroke="#2D335C"/>
+    <path d="M108 446H1492" stroke="#2D335C"/>
+    <path d="M108 538H1492" stroke="#2D335C"/>
+    <path d="M108 630H1492" stroke="#2D335C"/>
+    <path d="M108 722H1492" stroke="#2D335C"/>
   </g>
 
-  <circle cx="1408" cy="170" r="118" fill="#22D3EE" opacity="0.12" filter="url(#glow)" />
-  <circle cx="214" cy="718" r="144" fill="#2563EB" opacity="0.1" filter="url(#glow)" />
-
-  <text x="132" y="172" fill="#38BDF8" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.18em">
-    MACHINE LEARNING + ANALYTICS
+  <text x="126" y="166" fill="#67E8F9" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.16em">
+    MACHINE LEARNING CLUSTERING
   </text>
-  <text x="132" y="292" fill="#F8FAFC" font-size="82" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
+  <text x="126" y="286" fill="#F8FAFC" font-size="86" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
     Triggo Case Study
   </text>
-  <text x="132" y="368" fill="#94A3B8" font-size="36" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
-    Dynamic customer clustering with testing, logging and action-ready segments
+  <text x="126" y="362" fill="#A5B4C8" font-size="35" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
+    Segmentation analysis, cluster discovery and model-driven business reading
   </text>
 
   <g>
-    <rect x="132" y="438" width="170" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="166" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Python</text>
-    <rect x="320" y="438" width="154" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="362" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">ML</text>
-    <rect x="492" y="438" width="206" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
-    <text x="532" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Segmentation</text>
+    <rect x="126" y="432" width="160" height="52" rx="26" fill="#101626" stroke="#2F365A"/>
+    <text x="170" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Python</text>
+    <rect x="304" y="432" width="182" height="52" rx="26" fill="#101626" stroke="#2F365A"/>
+    <text x="346" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">K-Means</text>
+    <rect x="504" y="432" width="178" height="52" rx="26" fill="#101626" stroke="#2F365A"/>
+    <text x="544" y="466" fill="#E2E8F0" font-size="23" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Insights</text>
   </g>
 
-  <rect x="850" y="136" width="700" height="452" rx="34" fill="#08111D" stroke="url(#accent)" stroke-width="2" />
-  <rect x="882" y="176" width="640" height="372" rx="22" fill="url(#panel)" />
-  <rect x="918" y="212" width="188" height="114" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <text x="950" y="250" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Clusters</text>
-  <text x="950" y="302" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Adaptive K</text>
-  <rect x="1122" y="212" width="188" height="114" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <text x="1154" y="250" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Signal</text>
-  <text x="1154" y="302" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Silhouette</text>
-  <rect x="1326" y="212" width="150" height="114" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <text x="1358" y="250" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Logs</text>
-  <text x="1358" y="302" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Pytest</text>
+  <g>
+    <rect x="850" y="132" width="694" height="552" rx="32" fill="#08101D" stroke="url(#triggo-accent)" stroke-width="2"/>
+    <rect x="890" y="172" width="420" height="474" rx="26" fill="#0B1322" stroke="#232C44"/>
+    <rect x="1334" y="172" width="170" height="226" rx="24" fill="#0B1322" stroke="#232C44"/>
+    <rect x="1334" y="420" width="170" height="226" rx="24" fill="#0B1322" stroke="#232C44"/>
 
-  <rect x="918" y="352" width="288" height="156" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <circle cx="972" cy="440" r="20" fill="#22D3EE" opacity="0.9" />
-  <circle cx="1032" cy="394" r="18" fill="#38BDF8" opacity="0.8" />
-  <circle cx="1080" cy="456" r="16" fill="#60A5FA" opacity="0.8" />
-  <circle cx="1128" cy="420" r="22" fill="#2563EB" opacity="0.85" />
-  <circle cx="1160" cy="376" r="14" fill="#93C5FD" opacity="0.85" />
+    <circle cx="1012" cy="308" r="11" fill="#22D3EE"/>
+    <circle cx="1058" cy="340" r="11" fill="#22D3EE"/>
+    <circle cx="1084" cy="284" r="11" fill="#22D3EE"/>
+    <circle cx="1138" cy="330" r="11" fill="#22D3EE"/>
 
-  <rect x="1230" y="352" width="246" height="156" rx="20" fill="#0B1220" stroke="#1E3A8A" />
-  <path d="M1260 474L1306 430L1346 448L1392 394L1442 372" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="1260" y="380" width="88" height="18" rx="9" fill="#1E3A8A" opacity="0.5" />
-  <rect x="1260" y="406" width="124" height="18" rx="9" fill="#0EA5E9" opacity="0.75" />
+    <circle cx="984" cy="498" r="11" fill="#A3E635"/>
+    <circle cx="1040" cy="536" r="11" fill="#A3E635"/>
+    <circle cx="1102" cy="518" r="11" fill="#A3E635"/>
+    <circle cx="1126" cy="570" r="11" fill="#A3E635"/>
 
-  <g opacity="0.85">
-    <rect x="882" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="914" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Core logic</text>
-    <text x="914" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Silhouette ML</text>
+    <circle cx="1186" cy="404" r="11" fill="#8B5CF6"/>
+    <circle cx="1238" cy="436" r="11" fill="#8B5CF6"/>
+    <circle cx="1198" cy="482" r="11" fill="#8B5CF6"/>
+    <circle cx="1258" cy="516" r="11" fill="#8B5CF6"/>
 
-    <rect x="1104" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="1136" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Reliability</text>
-    <text x="1136" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Tests + Logs</text>
+    <circle cx="1082" cy="322" r="20" fill="#071827" stroke="#67E8F9" stroke-width="3"/>
+    <circle cx="1050" cy="532" r="20" fill="#121B0C" stroke="#A3E635" stroke-width="3"/>
+    <circle cx="1214" cy="462" r="20" fill="#181226" stroke="#A78BFA" stroke-width="3"/>
 
-    <rect x="1326" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
-    <text x="1358" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Business</text>
-    <text x="1358" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Actionable Segments</text>
+    <path d="M972 322L1082 322" stroke="#67E8F9" stroke-width="2" stroke-dasharray="6 10" opacity="0.6"/>
+    <path d="M1012 508L1050 532" stroke="#A3E635" stroke-width="2" stroke-dasharray="6 10" opacity="0.6"/>
+    <path d="M1238 436L1214 462" stroke="#A78BFA" stroke-width="2" stroke-dasharray="6 10" opacity="0.6"/>
+
+    <text x="1362" y="214" fill="#E5E7EB" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Clusters</text>
+    <rect x="1362" y="242" width="16" height="16" rx="8" fill="#22D3EE"/>
+    <text x="1390" y="255" fill="#AEB8C8" font-size="16" font-family="Segoe UI, Arial, sans-serif">Segment A</text>
+    <rect x="1362" y="274" width="16" height="16" rx="8" fill="#8B5CF6"/>
+    <text x="1390" y="287" fill="#AEB8C8" font-size="16" font-family="Segoe UI, Arial, sans-serif">Segment B</text>
+    <rect x="1362" y="306" width="16" height="16" rx="8" fill="#A3E635"/>
+    <text x="1390" y="319" fill="#AEB8C8" font-size="16" font-family="Segoe UI, Arial, sans-serif">Segment C</text>
+    <text x="1362" y="362" fill="#F8FAFC" font-size="28" font-weight="800" font-family="Segoe UI, Arial, sans-serif">3</text>
+    <text x="1392" y="362" fill="#AEB8C8" font-size="16" font-family="Segoe UI, Arial, sans-serif">validated groups</text>
+
+    <text x="1362" y="462" fill="#E5E7EB" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Model Reading</text>
+    <path d="M1362 538L1390 510L1416 522L1448 482L1476 490" stroke="#67E8F9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1362 564H1476" stroke="#334155"/>
+    <text x="1362" y="604" fill="#AEB8C8" font-size="16" font-family="Segoe UI, Arial, sans-serif">behavior, value and</text>
+    <text x="1362" y="626" fill="#AEB8C8" font-size="16" font-family="Segoe UI, Arial, sans-serif">commercial potential</text>
   </g>
 </svg>
