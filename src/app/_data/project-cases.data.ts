@@ -78,9 +78,9 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/dashboard_neon_flow.png',
+        src: 'assets/projects/data_dashboard_showcase_card.svg',
         alt: 'Dashboard architecture',
-        caption: 'High-level architecture showing how the dashboard organizes source data, semantic modeling and KPI delivery.',
+        caption: 'Premium showcase thumbnail aligning the project with the portfolio visual system while summarizing the executive BI scope.',
       },
       {
         src: 'assets/projects/01-dashboard.jpg',
@@ -154,19 +154,22 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/ml_pipeline_dashboard_aggressively_cropped.png',
+        src: 'assets/projects/triggo_showcase_card.svg',
         alt: 'Triggo dashboard overview',
-        caption: 'High-level dashboard composition combining clustering outputs, KPIs and segment-oriented interpretation.',
+        caption: 'Premium showcase thumbnail summarizing clustering logic, business segmentation and the machine learning narrative.',
+        kind: 'showcase',
       },
       {
         src: 'assets/projects/ml_pipeline_dashboard_content.png',
         alt: 'Triggo detailed dashboard',
         caption: 'Detailed analytical view showing how clustering outputs were converted into commercial and marketing-oriented insight.',
+        kind: 'screenshot',
       },
       {
         src: 'assets/projects/triggo_demo.gif',
         alt: 'Triggo demo',
         caption: 'Animated preview of the analytical flow used to communicate the solution during the challenge.',
+        kind: 'artifact',
       },
     ],
     metrics: [
@@ -235,19 +238,22 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/olist_architecture_flow.png',
+        src: 'assets/projects/olist_showcase_card.svg',
         alt: 'Olist architecture flow',
-        caption: 'Architecture view connecting ingestion, warehouse design and BI consumption in a single end-to-end flow.',
+        caption: 'Premium showcase thumbnail connecting ETL, warehouse modeling and executive BI consumption.',
+        kind: 'showcase',
       },
       {
         src: 'assets/projects/02-etl.jpg',
         alt: 'Olist ETL layer',
         caption: 'Data engineering perspective highlighting the ETL and warehouse preparation layer.',
+        kind: 'screenshot',
       },
       {
         src: 'assets/projects/03-olist.png',
         alt: 'Olist analytics preview',
         caption: 'Analytical preview showing how the curated warehouse supports business-facing interpretation.',
+        kind: 'screenshot',
       },
     ],
     metrics: [
@@ -316,14 +322,16 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/lighthouse_end_to_end.png',
+        src: 'assets/projects/lighthouse_showcase_card.svg',
         alt: 'Lighthouse end-to-end flow',
-        caption: 'End-to-end view of the data science workflow, from exploration through modeling and recommendation logic.',
+        caption: 'Premium showcase thumbnail framing the project around exploratory analysis, prediction and recommendation logic.',
+        kind: 'showcase',
       },
       {
-        src: 'assets/projects/lighthouse_banner.png',
-        alt: 'Lighthouse visual overview',
-        caption: 'Project visual identity used to frame the challenge as a polished portfolio-grade case study.',
+        src: 'assets/projects/lighthouse_end_to_end.png',
+        alt: 'Lighthouse analytical architecture',
+        caption: 'End-to-end visual framing of the data science flow, connecting exploratory analysis, predictive modeling and recommendation logic.',
+        kind: 'artifact',
       },
     ],
     metrics: [
@@ -392,19 +400,22 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/strategic_sales_executive_thumb.png',
+        src: 'assets/projects/strategic_sales_showcase_card.svg',
         alt: 'Strategic sales executive view',
-        caption: 'Executive view focused on high-level commercial performance, revenue reading and KPI navigation.',
+        caption: 'Premium showcase thumbnail positioning the dashboard as an executive layer for pricing, promotions and product performance.',
+        kind: 'showcase',
       },
       {
         src: 'assets/projects/strategic_sales_promotions.png',
         alt: 'Promotions analysis dashboard',
         caption: 'Focused view of promotions and discount behavior used to explain pricing and revenue pressure.',
+        kind: 'screenshot',
       },
       {
         src: 'assets/projects/strategic_sales_products.png',
         alt: 'Product performance dashboard',
         caption: 'Product analysis layer showing how commercial performance is decomposed across the portfolio.',
+        kind: 'screenshot',
       },
     ],
     metrics: [
@@ -536,9 +547,9 @@ export const PROJECT_CASES_PT: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/dashboard_neon_flow.png',
+        src: 'assets/projects/data_dashboard_showcase_card.svg',
         alt: 'Arquitetura do dashboard',
-        caption: 'Arquitetura de alto nível mostrando como a solução organiza origem, modelagem semântica e entrega de KPIs.',
+        caption: 'Thumbnail premium que alinha o projeto ao design system do portfólio enquanto resume o escopo executivo da solução de BI.',
       },
       {
         src: 'assets/projects/01-dashboard.jpg',
@@ -612,19 +623,22 @@ export const PROJECT_CASES_PT: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/ml_pipeline_dashboard_aggressively_cropped.png',
+        src: 'assets/projects/triggo_showcase_card.svg',
         alt: 'Visão geral do dashboard Triggo',
-        caption: 'Composição de alto nível combinando outputs de clusterização, KPIs e interpretação orientada a segmentos.',
+        caption: 'Thumbnail premium resumindo lógica de clusterização, segmentação de negócio e a narrativa de machine learning do case.',
+        kind: 'showcase',
       },
       {
         src: 'assets/projects/ml_pipeline_dashboard_content.png',
         alt: 'Detalhe do dashboard Triggo',
         caption: 'Visão analítica detalhada mostrando como a clusterização foi convertida em insight comercial e de marketing.',
+        kind: 'screenshot',
       },
       {
         src: 'assets/projects/triggo_demo.gif',
         alt: 'Demo do projeto Triggo',
         caption: 'Prévia animada do fluxo analítico usado para comunicar a solução durante o desafio.',
+        kind: 'artifact',
       },
     ],
     metrics: [
@@ -693,19 +707,22 @@ export const PROJECT_CASES_PT: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/olist_architecture_flow.png',
+        src: 'assets/projects/olist_showcase_card.svg',
         alt: 'Fluxo da arquitetura Olist',
-        caption: 'Arquitetura conectando ingestão, desenho de warehouse e consumo em BI em um fluxo end-to-end.',
+        caption: 'Thumbnail premium conectando ETL, modelagem de warehouse e consumo executivo em BI.',
+        kind: 'showcase',
       },
       {
         src: 'assets/projects/02-etl.jpg',
         alt: 'Camada ETL do Olist',
         caption: 'Perspectiva de engenharia de dados destacando a preparação ETL e a camada de warehouse.',
+        kind: 'screenshot',
       },
       {
         src: 'assets/projects/03-olist.png',
         alt: 'Preview analítico Olist',
         caption: 'Prévia do output analítico mostrando como o warehouse curado sustenta interpretação de negócio.',
+        kind: 'screenshot',
       },
     ],
     metrics: [
@@ -774,14 +791,16 @@ export const PROJECT_CASES_PT: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/lighthouse_end_to_end.png',
+        src: 'assets/projects/lighthouse_showcase_card.svg',
         alt: 'Fluxo end-to-end Lighthouse',
-        caption: 'Visão end-to-end do fluxo de ciência de dados, da exploração à modelagem e lógica de recomendação.',
+        caption: 'Thumbnail premium enquadrando o projeto em torno de exploração analítica, predição e recomendação.',
+        kind: 'showcase',
       },
       {
-        src: 'assets/projects/lighthouse_banner.png',
-        alt: 'Visão geral visual do Lighthouse',
-        caption: 'Identidade visual do case usada para posicionar o projeto como estudo de portfólio mais polido.',
+        src: 'assets/projects/lighthouse_end_to_end.png',
+        alt: 'Arquitetura analítica do Lighthouse',
+        caption: 'Enquadramento visual end-to-end do fluxo de data science, conectando exploração, modelagem preditiva e recomendação.',
+        kind: 'artifact',
       },
     ],
     metrics: [
@@ -850,19 +869,22 @@ export const PROJECT_CASES_PT: ProjectCase[] = [
     ],
     screenshots: [
       {
-        src: 'assets/projects/strategic_sales_executive_thumb.png',
+        src: 'assets/projects/strategic_sales_showcase_card.svg',
         alt: 'Visão executiva da análise estratégica de vendas',
-        caption: 'Visão executiva focada em performance comercial, leitura de receita e navegação de KPIs.',
+        caption: 'Thumbnail premium posicionando o dashboard como camada executiva para pricing, promoções e performance de produto.',
+        kind: 'showcase',
       },
       {
         src: 'assets/projects/strategic_sales_promotions.png',
         alt: 'Análise de promoções',
         caption: 'Camada dedicada à leitura de promoções e comportamento de desconto para explicar pressão de pricing.',
+        kind: 'screenshot',
       },
       {
         src: 'assets/projects/strategic_sales_products.png',
         alt: 'Performance de produtos',
         caption: 'Análise de produtos mostrando como a performance comercial é decomposta ao nível do portfólio.',
+        kind: 'screenshot',
       },
     ],
     metrics: [

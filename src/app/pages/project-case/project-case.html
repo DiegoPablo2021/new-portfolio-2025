@@ -29,7 +29,11 @@
           </a>
         </div>
       </div>
-      <div class="case-hero-image">
+      <div
+        class="case-hero-image"
+        [class.case-hero-image--showcase]="screenshotKind(caseItem.screenshots[0].src, caseItem.screenshots[0].kind) === 'showcase'"
+        [class.case-hero-image--artifact]="screenshotKind(caseItem.screenshots[0].src, caseItem.screenshots[0].kind) === 'artifact'"
+      >
         <img [src]="caseItem.screenshots[0].src" [alt]="caseItem.screenshots[0].alt" />
       </div>
     </header>
@@ -105,7 +109,11 @@
       <h2>{{ currentLanguage() === 'pt' ? 'Screenshots' : 'Screenshots' }}</h2>
       <div class="screenshots-grid">
         @for (shot of caseItem.screenshots; track shot.src) {
-        <figure class="screenshot-card">
+        <figure
+          class="screenshot-card"
+          [class.screenshot-card--showcase]="screenshotKind(shot.src, shot.kind) === 'showcase'"
+          [class.screenshot-card--artifact]="screenshotKind(shot.src, shot.kind) === 'artifact'"
+        >
           <img [src]="shot.src" [alt]="shot.alt" />
           <figcaption>{{ shot.caption }}</figcaption>
         </figure>

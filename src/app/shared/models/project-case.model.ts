@@ -13,6 +13,7 @@ export interface ProjectCaseScreenshot {
   src: string;
   alt: string;
   caption: string;
+  kind?: 'showcase' | 'screenshot' | 'artifact';
 }
 
 export interface ProjectCase {

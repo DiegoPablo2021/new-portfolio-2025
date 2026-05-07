@@ -90,9 +90,19 @@
 .case-hero-image img {
   width: 100%;
   display: block;
+  aspect-ratio: 16 / 9;
   border-radius: 18px;
   border: 1px solid var.$border-light;
+  background-color: var.$muted-light;
+  object-fit: cover;
+}
+
+.case-hero-image--showcase img,
+.case-hero-image--artifact img {
   background-color: var.$background-card-light;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  object-fit: contain;
 }
 
 .case-section {
@@ -219,6 +229,8 @@
 
 .screenshot-card {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .screenshot-card img {
@@ -226,7 +238,19 @@
   display: block;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  background-color: var.$background-card-light;
+}
+
+.screenshot-card--showcase img,
+.screenshot-card--artifact img {
+  object-fit: contain;
+  padding: 0.75rem;
+  box-sizing: border-box;
   background-color: var.$muted-light;
+}
+
+.screenshot-card--artifact img {
+  object-position: top;
 }
 
 .screenshot-card figcaption {
@@ -297,6 +321,13 @@
   }
 
   .screenshot-card img {
+    background-color: var.$background-card-dark;
+  }
+
+  .screenshot-card--showcase img,
+  .screenshot-card--artifact img,
+  .case-hero-image--showcase img,
+  .case-hero-image--artifact img {
     background-color: var.$muted-dark;
   }
 }
@@ -308,5 +339,15 @@
 
   .case-hero-copy h1 {
     font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-actions {
+    flex-direction: column;
+  }
+
+  .case-button {
+    width: 100%;
   }
 }

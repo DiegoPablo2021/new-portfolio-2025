@@ -1,0 +1,100 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="80" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220" />
+      <stop offset="1" stop-color="#07101A" />
+    </linearGradient>
+    <linearGradient id="panel" x1="910" y1="172" x2="1388" y2="648" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1D31" />
+      <stop offset="1" stop-color="#09111D" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22D3EE" />
+      <stop offset="1" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)" />
+  <g opacity="0.12">
+    <path d="M120 176H1480" stroke="#0EA5E9" />
+    <path d="M120 248H1480" stroke="#0EA5E9" />
+    <path d="M120 320H1480" stroke="#0EA5E9" />
+    <path d="M120 392H1480" stroke="#0EA5E9" />
+    <path d="M120 464H1480" stroke="#0EA5E9" />
+    <path d="M120 536H1480" stroke="#0EA5E9" />
+    <path d="M120 608H1480" stroke="#0EA5E9" />
+    <path d="M120 680H1480" stroke="#0EA5E9" />
+    <path d="M248 108V792" stroke="#0EA5E9" />
+    <path d="M356 108V792" stroke="#0EA5E9" />
+    <path d="M464 108V792" stroke="#0EA5E9" />
+    <path d="M572 108V792" stroke="#0EA5E9" />
+    <path d="M680 108V792" stroke="#0EA5E9" />
+  </g>
+
+  <circle cx="1408" cy="170" r="118" fill="#22D3EE" opacity="0.12" filter="url(#glow)" />
+  <circle cx="214" cy="718" r="144" fill="#2563EB" opacity="0.1" filter="url(#glow)" />
+
+  <text x="132" y="172" fill="#38BDF8" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.18em">
+    MACHINE LEARNING + ANALYTICS
+  </text>
+  <text x="132" y="292" fill="#F8FAFC" font-size="82" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
+    Triggo Case Study
+  </text>
+  <text x="132" y="368" fill="#94A3B8" font-size="36" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
+    Dynamic customer clustering with testing, logging and action-ready segments
+  </text>
+
+  <g>
+    <rect x="132" y="438" width="170" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
+    <text x="166" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Python</text>
+    <rect x="320" y="438" width="154" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
+    <text x="362" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">ML</text>
+    <rect x="492" y="438" width="206" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
+    <text x="532" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Segmentation</text>
+  </g>
+
+  <rect x="850" y="136" width="700" height="452" rx="34" fill="#08111D" stroke="url(#accent)" stroke-width="2" />
+  <rect x="882" y="176" width="640" height="372" rx="22" fill="url(#panel)" />
+  <rect x="918" y="212" width="188" height="114" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <text x="950" y="250" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Clusters</text>
+  <text x="950" y="302" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Adaptive K</text>
+  <rect x="1122" y="212" width="188" height="114" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <text x="1154" y="250" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Signal</text>
+  <text x="1154" y="302" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Silhouette</text>
+  <rect x="1326" y="212" width="150" height="114" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <text x="1358" y="250" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Logs</text>
+  <text x="1358" y="302" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Pytest</text>
+
+  <rect x="918" y="352" width="288" height="156" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <circle cx="972" cy="440" r="20" fill="#22D3EE" opacity="0.9" />
+  <circle cx="1032" cy="394" r="18" fill="#38BDF8" opacity="0.8" />
+  <circle cx="1080" cy="456" r="16" fill="#60A5FA" opacity="0.8" />
+  <circle cx="1128" cy="420" r="22" fill="#2563EB" opacity="0.85" />
+  <circle cx="1160" cy="376" r="14" fill="#93C5FD" opacity="0.85" />
+
+  <rect x="1230" y="352" width="246" height="156" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <path d="M1260 474L1306 430L1346 448L1392 394L1442 372" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="1260" y="380" width="88" height="18" rx="9" fill="#1E3A8A" opacity="0.5" />
+  <rect x="1260" y="406" width="124" height="18" rx="9" fill="#0EA5E9" opacity="0.75" />
+
+  <g opacity="0.85">
+    <rect x="882" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
+    <text x="914" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Core logic</text>
+    <text x="914" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Silhouette ML</text>
+
+    <rect x="1104" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
+    <text x="1136" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Reliability</text>
+    <text x="1136" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Tests + Logs</text>
+
+    <rect x="1326" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
+    <text x="1358" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Business</text>
+    <text x="1358" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Actionable Segments</text>
+  </g>
+</svg>

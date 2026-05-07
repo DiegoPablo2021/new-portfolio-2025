@@ -1,0 +1,100 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="80" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220" />
+      <stop offset="1" stop-color="#06111A" />
+    </linearGradient>
+    <linearGradient id="panel" x1="910" y1="172" x2="1388" y2="648" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1C30" />
+      <stop offset="1" stop-color="#09111C" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#38BDF8" />
+      <stop offset="1" stop-color="#A855F7" />
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)" />
+  <g opacity="0.12">
+    <path d="M120 176H1480" stroke="#A855F7" />
+    <path d="M120 248H1480" stroke="#A855F7" />
+    <path d="M120 320H1480" stroke="#A855F7" />
+    <path d="M120 392H1480" stroke="#A855F7" />
+    <path d="M120 464H1480" stroke="#A855F7" />
+    <path d="M120 536H1480" stroke="#A855F7" />
+    <path d="M120 608H1480" stroke="#A855F7" />
+    <path d="M120 680H1480" stroke="#A855F7" />
+    <path d="M248 108V792" stroke="#A855F7" />
+    <path d="M356 108V792" stroke="#A855F7" />
+    <path d="M464 108V792" stroke="#A855F7" />
+    <path d="M572 108V792" stroke="#A855F7" />
+    <path d="M680 108V792" stroke="#A855F7" />
+  </g>
+
+  <circle cx="1402" cy="170" r="118" fill="#A855F7" opacity="0.11" filter="url(#glow)" />
+  <circle cx="220" cy="720" r="144" fill="#22D3EE" opacity="0.1" filter="url(#glow)" />
+
+  <text x="132" y="172" fill="#38BDF8" font-size="34" font-weight="700" font-family="Segoe UI, Arial, sans-serif" letter-spacing="0.18em">
+    DATA SCIENCE + RECOMMENDATION
+  </text>
+  <text x="132" y="292" fill="#F8FAFC" font-size="78" font-weight="800" font-family="Segoe UI, Arial, sans-serif">
+    Lighthouse Dados AI
+  </text>
+  <text x="132" y="368" fill="#94A3B8" font-size="36" font-weight="500" font-family="Segoe UI, Arial, sans-serif">
+    Exploratory analysis, predictive modeling and recommendation logic
+  </text>
+
+  <g>
+    <rect x="132" y="438" width="154" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
+    <text x="172" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">EDA</text>
+    <rect x="304" y="438" width="190" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
+    <text x="346" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Prediction</text>
+    <rect x="512" y="438" width="236" height="54" rx="27" fill="#0F172A" stroke="#1E40AF" />
+    <text x="554" y="473" fill="#E2E8F0" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Recommendation</text>
+  </g>
+
+  <rect x="850" y="136" width="700" height="452" rx="34" fill="#08111D" stroke="url(#accent)" stroke-width="2" />
+  <rect x="882" y="176" width="640" height="372" rx="22" fill="url(#panel)" />
+  <rect x="918" y="212" width="180" height="112" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <text x="950" y="248" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">EDA</text>
+  <text x="950" y="298" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Patterns</text>
+  <rect x="1116" y="212" width="180" height="112" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <text x="1148" y="248" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Models</text>
+  <text x="1148" y="298" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Predict</text>
+  <rect x="1314" y="212" width="162" height="112" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <text x="1346" y="248" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">AI</text>
+  <text x="1346" y="298" fill="#F8FAFC" font-size="42" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Next Best</text>
+
+  <rect x="918" y="352" width="252" height="156" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <path d="M950 472L996 434L1046 446L1098 396L1140 376" stroke="#A855F7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M950 456L996 442L1046 452L1098 408L1140 392" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
+  <rect x="1198" y="352" width="278" height="156" rx="20" fill="#0B1220" stroke="#1E3A8A" />
+  <rect x="1232" y="384" width="96" height="18" rx="9" fill="#38BDF8" opacity="0.8" />
+  <rect x="1232" y="416" width="142" height="18" rx="9" fill="#A855F7" opacity="0.75" />
+  <rect x="1232" y="448" width="114" height="18" rx="9" fill="#93C5FD" opacity="0.65" />
+  <rect x="1388" y="378" width="54" height="96" rx="16" fill="#0F172A" stroke="#1E3A8A" />
+  <circle cx="1415" cy="404" r="10" fill="#22D3EE" />
+  <circle cx="1415" cy="430" r="10" fill="#38BDF8" />
+  <circle cx="1415" cy="456" r="10" fill="#A855F7" />
+
+  <g opacity="0.85">
+    <rect x="882" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
+    <text x="914" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Analytical</text>
+    <text x="914" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">EDA Lens</text>
+
+    <rect x="1104" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
+    <text x="1136" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Modeling</text>
+    <text x="1136" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Prediction</text>
+
+    <rect x="1326" y="602" width="196" height="112" rx="22" fill="#0F172A" stroke="#1E40AF" />
+    <text x="1358" y="642" fill="#93C5FD" font-size="20" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Business</text>
+    <text x="1358" y="686" fill="#F8FAFC" font-size="34" font-weight="800" font-family="Segoe UI, Arial, sans-serif">Recommendation</text>
+  </g>
+</svg>

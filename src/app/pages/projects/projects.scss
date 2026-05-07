@@ -36,6 +36,7 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: stretch;
 }
 
 .project-card {
@@ -45,6 +46,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 640px;
+  height: 100%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -58,14 +61,23 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem;
   background-color: var.$muted-light;
+  background-image: radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 34%);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 }
 
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background-color: rgba(2, 6, 23, 0.28);
 }
 
 .project-content {
@@ -77,12 +89,18 @@
     font-weight: 700;
     color: var.$text-title-light;
     margin-bottom: 0.75rem;
+    min-height: 3.2rem;
   }
 
   p {
     font-size: 1rem;
     line-height: 1.6;
     color: var.$text-paragraph-light;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 8rem;
   }
 }
 
@@ -94,6 +112,7 @@
   border-top: 1px solid var.$border-light;
   margin-top: auto;
   padding-top: 1.5rem;
+  align-content: end;
 }
 
 .project-footer--stacked {
@@ -155,6 +174,8 @@
 
   .project-image-container {
     background-color: var.$muted-dark;
+    background-image: radial-gradient(circle at top right, rgba(34, 211, 238, 0.14), transparent 34%);
+    border-bottom-color: rgba(148, 163, 184, 0.14);
   }
 
   .project-content {
@@ -170,6 +191,29 @@
     background-color: var.$button-background-dark;
     &:hover {
       background-color: var.$button-hover-dark;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .project-card {
+    min-height: 620px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-card {
+    min-height: 0;
+  }
+
+  .project-content {
+    h3 {
+      min-height: 0;
+    }
+
+    p {
+      min-height: 0;
+      -webkit-line-clamp: 6;
     }
   }
 }

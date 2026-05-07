@@ -18,6 +18,7 @@
 
   .hero-content {
     flex: 1 1 500px;
+    min-width: 0;
     display: flex;
     flex-direction: column;
 
@@ -36,6 +37,8 @@
       line-height: 1.1;
       margin-bottom: 1.2rem;
       color: var.$text-title-light;
+      max-width: 100%;
+      text-wrap: balance;
     }
 
     .role {
@@ -43,6 +46,7 @@
       font-weight: 700;
       color: var.$text-subtitle-light;
       margin-bottom: 1.5rem;
+      min-height: 1.5em;
     }
 
     .intro,
@@ -93,6 +97,7 @@
 
   .hero-img-wrapper {
     flex: 1 1 400px;
+    min-width: 0;
     display: flex;
     justify-content: center;
 
@@ -179,6 +184,7 @@ body.light .hero-section {
 @media (max-width: 768px) {
   .hero-section {
     padding: 3rem 1rem;
+    overflow-x: clip;
 
     .hero-container {
       flex-direction: column-reverse;
@@ -188,11 +194,12 @@ body.light .hero-section {
       .hero-content {
         flex: none;
         width: 100%;
-        text-align: justify;
-        align-items: center;
+        text-align: left;
+        align-items: flex-start;
 
         h1 {
-          font-size: 2.8rem;
+          font-size: 2.5rem;
+          line-height: 1.05;
         }
 
         .role {
@@ -211,7 +218,7 @@ body.light .hero-section {
           font-size: 1.1rem;
           padding: 1rem 0;
           justify-content: center;
-          margin: 0 auto;
+          margin: 0;
         }
       }
 
@@ -224,9 +231,10 @@ body.light .hero-section {
         margin-bottom: 4rem;
 
         .hero-img {
-          width: 70%;
+          width: min(72%, 320px);
           border-radius: 0.75rem;
           box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.25);
+          transform: translateY(0);
         }
       }
     }
@@ -249,16 +257,18 @@ body.light .hero-section {
 
       .hero-content {
         h1 {
-          font-size: 2.2rem;
+          font-size: 2rem;
         }
 
         .role {
           font-size: 1.2rem;
+          min-height: 1.4em;
         }
 
         .intro,
         .skills {
           font-size: 1rem;
+          line-height: 1.65;
         }
 
         .btn-contact {
@@ -271,9 +281,9 @@ body.light .hero-section {
 
       .hero-img-wrapper {
         margin-bottom: 2rem;
+
         .hero-img {
-          max-width: 100%;
-          transform: translateY(20px);
+          max-width: min(100%, 260px);
         }
       }
     }
