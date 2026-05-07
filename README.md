@@ -1,100 +1,174 @@
-# Meu Portfólio Pessoal
+# Diego Portfolio 2025
 
-Um portfólio moderno, responsivo e interativo construído com as mais recentes tecnologias do Angular para exibir minhas competências, projetos e trajetória profissional na área de Dados.
+[![Angular](https://img.shields.io/badge/Angular-20-DD0031?logo=angular&logoColor=white)](https://angular.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![SCSS](https://img.shields.io/badge/SCSS-Design_System-CC6699?logo=sass&logoColor=white)](https://sass-lang.com/)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white)](https://diego-pablo.vercel.app)
 
-### [Acesse a versão ao vivo aqui!](https://diego-pablo.vercel.app)
+Modern portfolio built to present analytics engineering, business intelligence and data science projects with a recruiter-friendly executive narrative, responsive project case pages and a premium dark visual system.
 
-## Visualização (Modo Escuro)
+Live site: [diego-pablo.vercel.app](https://diego-pablo.vercel.app)
 
-Prévia do design do portfólio no tema escuro, destacando a legibilidade e a estética moderna.
+## Executive Overview
 
-![Prévia do Portfólio 1](docs/print1.png)
-![Prévia do Portfólio 2](docs/print2.png)
+This repository is not a generic personal website. It is a structured showcase for production-minded analytics work, designed to communicate:
 
----
+- business context before tooling
+- architecture and technical decisions with clarity
+- project storytelling that feels closer to a case study than a gallery
+- a consistent premium presentation across data engineering, BI and data science projects
 
-## 🎯 Sobre o Projeto
+The portfolio balances two goals:
 
-Este projeto foi desenvolvido para ser meu cartão de visitas digital. O objetivo é apresentar de forma clara e objetiva minha jornada como Analista de Dados, minhas habilidades técnicas (Hard Skills) e interpessoais (Soft Skills), além dos projetos em que trabalhei.
+1. Present strong technical depth for analytics engineers, BI engineers and data leads.
+2. Preserve readability for recruiters, hiring managers and non-specialist interviewers.
 
-O design foi pensado para ser limpo e focado no conteúdo, com total responsividade para uma ótima experiência em desktops, tablets e celulares.
+## What The Portfolio Highlights
 
----
+Featured projects cover:
 
-## ✨ Principais Funcionalidades
+- executive Power BI and DAX solutions
+- data engineering pipelines and warehouse design
+- analytics engineering workflows
+- machine learning and decision-support narratives
+- end-to-end case studies with architecture, metrics and screenshots
 
--   **Design Responsivo**: Adaptável a qualquer tamanho de tela.
--   **Tema Claro e Escuro**: Alternância de tema para preferência visual do usuário.
--   **Internacionalização (i18n)**: Suporte para Português (PT) e Inglês (EN).
--   **Arquitetura Moderna com Angular**: Construído com componentes Standalone e reatividade baseada em Signals.
--   **Seções Dinâmicas**:
-    -   **Hero**: Apresentação inicial com efeito de digitação.
-    -   **Sobre Mim**: Detalhes sobre minha trajetória e paixões.
-    -   **Experiências**: Linha do tempo interativa da minha carreira profissional.
-    -   **Competências**: Exibição de Hard e Soft Skills com barras de progresso.
-    -   **Conquistas**: Grade com badges e certificações oficiais.
-    -   **Projetos**: Cards detalhando meus principais trabalhos.
-    -   **Depoimentos**: Recomendações de colegas e gestores.
-    -   **Contato**: Links diretos para minhas redes e formas de contato.
--   **Estilização com SCSS**: Uso de variáveis para facilitar a manutenção e garantir consistência visual.
+Each featured project includes a dedicated `Details` experience with:
 
----
+- problem framing
+- architecture walkthrough
+- stack summary
+- key metrics
+- technical decisions
+- business impact
+- screenshots and executive narrative
 
-## 🚀 Tecnologias Utilizadas
+## Product Experience
 
--   **Frontend**:
-    -   [Angular](https://angular.io/) (v20+)
-    -   [TypeScript](https://www.typescriptlang.org/)
-    -   [SCSS](https://sass-lang.com/)
+The UI is intentionally designed as a polished dark portfolio with:
 
--   **Bibliotecas**:
-    -   [Font Awesome](https://fontawesome.com/) para ícones.
+- responsive layout across desktop, tablet and mobile
+- bilingual content (`PT` / `EN`)
+- dark/light theme support
+- reusable CTA patterns
+- consistent project-card hierarchy
+- case pages that behave like mini technical briefs
 
--   **Ferramentas de Desenvolvimento**:
-    -   [Angular CLI](https://cli.angular.io/)
-    -   [Git & GitHub](https://github.com/)
+## Frontend Stack
 
----
+| Layer | Technology | Purpose |
+| --- | --- | --- |
+| Framework | Angular 20 | Single-page portfolio application |
+| Language | TypeScript | Typed UI logic and data-driven sections |
+| Styling | SCSS | Shared theme tokens and responsive layout system |
+| Icons | Font Awesome + inline SVG | Consistent portfolio iconography |
+| Deployment | Vercel | Production hosting |
 
-## 🔧 Como Começar
+## Solution Structure
 
-Siga os passos abaixo para executar o projeto em seu ambiente local.
+```text
+src/
+  app/
+    _data/                 # Portfolio content sources for cards and case pages
+    pages/
+      hero/                # Intro and positioning
+      projects/            # Portfolio cards grid
+      project-case/        # Deep-dive case study pages
+      experience/          # Timeline and career experience
+      skills/              # Hard and soft skill sections
+      achievements/        # Certifications and achievements
+      testimonials/        # Recommendations
+      contact/             # Contact channels
+    shared/
+      models/              # Typed content contracts
+      services/            # Cross-page state and utilities
+      scss/                # Shared variables and design tokens
+public/
+  assets/
+    projects/              # Thumbnails, diagrams and screenshots
+docs/
+  print1.png
+  print2.png
+```
 
-### Pré-requisitos
+## Featured Project Strategy
 
-Você precisa ter o Node.js e o Angular CLI instalados em sua máquina.
+The portfolio is organized around project storytelling, not only project listing.
 
--   [Node.js](https://nodejs.org/) (versão 18 ou superior)
--   Instale o Angular CLI globalmente:
-    ```bash
-    npm install -g @angular/cli
-    ```
+Examples:
 
-### Instalação e Execução
+- **LinkedIn Career Intelligence Lakehouse**: end-to-end data engineering, semantic modeling, snapshots, observability and executive Power BI.
+- **Triggo Case Study**: machine learning segmentation with stronger engineering discipline and business interpretation.
+- **Strategic Sales Analysis**: Power BI dashboarding focused on pricing, promotion and product performance.
+- **Olist Analytics & Data Engineering**: ETL, warehouse design and BI consumption over public e-commerce data.
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com/DiegoPablo2021/Diego-Portfolio-2025.git
-    ```
+## Design Principles
 
-2.  **Navegue até o diretório do projeto:**
-    ```bash
-    cd Diego-Portfolio-2025
-    ```
+This repository follows a few explicit UX decisions:
 
-3.  **Instale as dependências:**
-    ```bash
-    npm install
-    ```
+- premium but restrained visual language
+- no unnecessary animation-heavy gimmicks
+- strong hierarchy in project cards and case pages
+- reusable CTA patterns instead of per-card ad hoc buttons
+- screenshots used as evidence, not decoration
 
-4.  **Execute o servidor de desenvolvimento:**
-    ```bash
-    ng serve -o
-    ```
-    O comando `-o` abrirá automaticamente o projeto em seu navegador no endereço `http://localhost:4200/`.
+## Local Development
 
-### Build para Produção
+### Prerequisites
 
-Para gerar os arquivos de produção, execute o comando:
+- Node.js 18+
+- npm
+
+### Install
+
 ```bash
-ng build
+npm install
+```
+
+### Run locally
+
+```bash
+npm start
+```
+
+App runs at `http://localhost:4200`.
+
+### Production build
+
+```bash
+npm run build
+```
+
+### Test
+
+```bash
+npm test
+```
+
+## Portfolio Engineering Notes
+
+Key implementation choices:
+
+- project content is data-driven through typed arrays instead of hard-coded page markup
+- case pages reuse a common rendering structure with optional advanced sections
+- assets are curated per project to preserve card consistency and avoid distorted thumbnails
+- the project grid keeps a stable layout while allowing project-specific CTA combinations
+
+## Screenshots
+
+Dark mode previews:
+
+![Portfolio preview 1](docs/print1.png)
+![Portfolio preview 2](docs/print2.png)
+
+## Future Improvements
+
+- richer animation polish for case transitions
+- more structured content localization
+- optional filtering by project domain
+- automated asset optimization for screenshots and thumbnails
+- component-level visual regression validation
+
+## Author
+
+Built and maintained by Diego Pablo as a portfolio-grade showcase for analytics engineering, BI and data science work.

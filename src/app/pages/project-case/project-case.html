@@ -60,6 +60,20 @@
       </div>
     </section>
 
+    @if (caseItem.technicalDecisions?.length) {
+      <section class="case-section">
+        <h2>{{ currentLanguage() === 'pt' ? 'Decisões técnicas' : 'Technical decisions' }}</h2>
+        <div class="insight-grid">
+          @for (decision of caseItem.technicalDecisions; track decision.title) {
+            <article class="insight-card">
+              <h3>{{ decision.title }}</h3>
+              <p>{{ decision.detail }}</p>
+            </article>
+          }
+        </div>
+      </section>
+    }
+
     <section class="case-section">
       <h2>{{ currentLanguage() === 'pt' ? 'Principais métricas' : 'Key metrics' }}</h2>
       <div class="metrics-grid">
@@ -73,6 +87,20 @@
       </div>
     </section>
 
+    @if (caseItem.businessImpact?.length) {
+      <section class="case-section">
+        <h2>{{ currentLanguage() === 'pt' ? 'Impacto de negócio' : 'Business impact' }}</h2>
+        <div class="insight-grid">
+          @for (impact of caseItem.businessImpact; track impact.title) {
+            <article class="insight-card">
+              <h3>{{ impact.title }}</h3>
+              <p>{{ impact.detail }}</p>
+            </article>
+          }
+        </div>
+      </section>
+    }
+
     <section class="case-section">
       <h2>{{ currentLanguage() === 'pt' ? 'Screenshots' : 'Screenshots' }}</h2>
       <div class="screenshots-grid">
@@ -84,6 +112,15 @@
         }
       </div>
     </section>
+
+    @if (caseItem.executiveNarrative) {
+      <section class="case-section">
+        <h2>{{ currentLanguage() === 'pt' ? 'Narrativa executiva' : 'Executive narrative' }}</h2>
+        <article class="narrative-card">
+          <p>{{ caseItem.executiveNarrative }}</p>
+        </article>
+      </section>
+    }
   </div>
 </section>
 } @else {

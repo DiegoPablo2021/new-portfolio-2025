@@ -4,6 +4,11 @@ export interface ProjectCaseMetric {
   detail: string;
 }
 
+export interface ProjectCaseHighlight {
+  title: string;
+  detail: string;
+}
+
 export interface ProjectCaseScreenshot {
   src: string;
   alt: string;
@@ -23,4 +28,7 @@ export interface ProjectCase {
   githubUrl: string;
   appUrl?: string;
   dashboardUrl?: string;
+  technicalDecisions?: ProjectCaseHighlight[];
+  businessImpact?: ProjectCaseHighlight[];
+  executiveNarrative?: string;
 }

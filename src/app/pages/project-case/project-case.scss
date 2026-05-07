@@ -157,7 +157,15 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.insight-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 .metric-card,
+.insight-card,
+.narrative-card,
 .screenshot-card,
 .case-not-found {
   border: 1px solid var.$border-light;
@@ -167,6 +175,24 @@
 
 .metric-card {
   padding: 1.25rem;
+}
+
+.insight-card,
+.narrative-card {
+  padding: 1.25rem;
+}
+
+.insight-card h3 {
+  font-size: 1.05rem;
+  color: var.$text-title-light;
+  margin-bottom: 0.6rem;
+}
+
+.insight-card p,
+.narrative-card p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var.$text-paragraph-light;
 }
 
 .metric-label {
@@ -227,12 +253,15 @@
   .case-hero-copy h1,
   .case-section h2,
   .chip,
+  .insight-card h3,
   .metric-card h3 {
     color: var.$text-title-dark;
   }
 
   .case-summary,
   .case-section p,
+  .insight-card p,
+  .narrative-card p,
   .screenshot-card figcaption {
     color: var.$text-paragraph-dark;
   }
@@ -250,6 +279,8 @@
   .chip,
   .architecture-item,
   .metric-card,
+  .insight-card,
+  .narrative-card,
   .screenshot-card,
   .case-not-found {
     border-color: var.$border-dark;
