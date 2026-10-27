@@ -2,6 +2,53 @@ import { ProjectCase } from '../shared/models/project-case.model';
 
 export const PROJECT_CASES_EN: ProjectCase[] = [
   {
+    "slug": "saas-conversion-funnel",
+    "title": "SaaS Conversion Funnel",
+    "category": "Business Analytics · Portfolio case",
+    "summary": "Portfolio case analyzing 10,000 visitors, conversion by channel and device, and post-purchase NPS eligibility with Python, DuckDB and Streamlit.",
+    "problem": "Identify conversion bottlenecks in a SaaS case dataset and distinguish eligible post-purchase NPS responses from records requiring investigation.",
+    "stack": [
+        "Python",
+        "Pandas",
+        "SQL",
+        "DuckDB",
+        "Plotly",
+        "Streamlit"
+    ],
+    "architecture": [
+        "CSV ingestion, profiling and data-quality validation with Pandas.",
+        "SQL views in DuckDB calculate overall and segmented funnel metrics.",
+        "Streamlit presents conversion, segments, NPS and data-quality findings."
+    ],
+    "screenshots": [
+        {
+            "src": "assets/projects/saas-funnel.svg",
+            "alt": "SaaS Conversion Funnel",
+            "caption": "Full dataset: 10,000 visits, 2,983 signups and 919 purchases.",
+            "kind": "artifact"
+        }
+    ],
+    "metrics": [
+        {
+            "label": "Visitors",
+            "value": "10.000",
+            "detail": "Case dataset"
+        },
+        {
+            "label": "Signups",
+            "value": "2.983",
+            "detail": "29,83% visit-to-signup"
+        },
+        {
+            "label": "Purchases",
+            "value": "919",
+            "detail": "9,19% visit-to-purchase"
+        }
+    ],
+    "githubUrl": "https://github.com/DiegoPablo2021/desafio-conta-azul",
+    "appUrl": "https://dp-case-conta-azul.streamlit.app/"
+},
+  {
     slug: 'linkedin-career-intelligence-lakehouse',
     title: 'LinkedIn Career Intelligence Lakehouse',
     category: 'Data Engineering Case',
@@ -470,6 +517,53 @@ export const PROJECT_CASES_EN: ProjectCase[] = [
 ];
 
 export const PROJECT_CASES_PT: ProjectCase[] = [
+  {
+    "slug": "saas-conversion-funnel",
+    "title": "Funil de Conversão SaaS",
+    "category": "Business Analytics · Case de portfólio",
+    "summary": "Case de portfólio com 10.000 visitantes, conversão por canal e dispositivo e validação da elegibilidade do NPS pós-compra, usando Python, DuckDB e Streamlit.",
+    "problem": "Identificar gargalos de conversão em uma base de um case SaaS e separar respostas elegíveis de NPS pós-compra de registros que exigem investigação.",
+    "stack": [
+        "Python",
+        "Pandas",
+        "SQL",
+        "DuckDB",
+        "Plotly",
+        "Streamlit"
+    ],
+    "architecture": [
+        "Ingestão do CSV, profiling e validação de qualidade com Pandas.",
+        "Views SQL em DuckDB calculam métricas gerais e segmentadas do funil.",
+        "Streamlit apresenta conversão, segmentos, NPS e achados de qualidade dos dados."
+    ],
+    "screenshots": [
+        {
+            "src": "assets/projects/saas-funnel.svg",
+            "alt": "Funil de Conversão SaaS",
+            "caption": "Base completa: 10.000 visitas, 2.983 cadastros e 919 compras.",
+            "kind": "artifact"
+        }
+    ],
+    "metrics": [
+        {
+            "label": "Visitantes",
+            "value": "10.000",
+            "detail": "Base do case"
+        },
+        {
+            "label": "Cadastros",
+            "value": "2.983",
+            "detail": "29,83% visit-to-signup"
+        },
+        {
+            "label": "Compras",
+            "value": "919",
+            "detail": "9,19% visit-to-purchase"
+        }
+    ],
+    "githubUrl": "https://github.com/DiegoPablo2021/desafio-conta-azul",
+    "appUrl": "https://dp-case-conta-azul.streamlit.app/"
+},
   {
     slug: 'linkedin-career-intelligence-lakehouse',
     title: 'LinkedIn Career Intelligence Lakehouse',

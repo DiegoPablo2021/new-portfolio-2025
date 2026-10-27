@@ -1,17 +1,4 @@
-import { signal } from "@angular/core";
+import { signal } from '@angular/core';
 
-export const ROLES_EN = signal<string[]>([
-    "Data Analyst",
-    "Data Engineer",
-    "Cloud Data Associate",
-    "SQL DBA",
-    "Power BI Dev"
-]);
-
-export const ROLES_PT = signal<string[]>([
-  'Analista de Dados',
-  'Engenheiro de Dados',
-  'Associado em Dados na Nuvem',
-  'Administrador de Banco de Dados SQL',
-  'Desenvolvedor Power BI',
-]);
+export const ROLES_EN = signal<string[]>(['Mid-level Data Analyst', 'Business Intelligence', 'Analytics & Data Visualization']);
+export const ROLES_PT = signal<string[]>(['Analista de Dados Pleno', 'Business Intelligence', 'Analytics e Visualização de Dados']);

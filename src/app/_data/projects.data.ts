@@ -3,6 +3,15 @@ import { Project } from "../shared/models/project.model";
 
 const PROJECTS_DATA_EN: Array<Project> = [
   {
+    "slug": "saas-conversion-funnel",
+    "title": "SaaS Conversion Funnel",
+    "description": "Portfolio case analyzing 10,000 visitors, conversion by channel and device, and post-purchase NPS eligibility with Python, DuckDB and Streamlit.",
+    "viewLink": "https://dp-case-conta-azul.streamlit.app/",
+    "appLink": "https://dp-case-conta-azul.streamlit.app/",
+    "sourceCode": "https://github.com/DiegoPablo2021/desafio-conta-azul",
+    "imageUrl": "assets/projects/saas-funnel.svg"
+},
+  {
     slug: 'linkedin-career-intelligence-lakehouse',
     title: 'LinkedIn Career Intelligence Lakehouse',
     description:
@@ -65,6 +74,15 @@ const PROJECTS_DATA_EN: Array<Project> = [
 ];
 
 export const PROJECTS_DATA_PT: Array<Project> = [
+  {
+    "slug": "saas-conversion-funnel",
+    "title": "Funil de Conversão SaaS",
+    "description": "Case de portfólio com 10.000 visitantes, conversão por canal e dispositivo e validação da elegibilidade do NPS pós-compra, usando Python, DuckDB e Streamlit.",
+    "viewLink": "https://dp-case-conta-azul.streamlit.app/",
+    "appLink": "https://dp-case-conta-azul.streamlit.app/",
+    "sourceCode": "https://github.com/DiegoPablo2021/desafio-conta-azul",
+    "imageUrl": "assets/projects/saas-funnel.svg"
+},
   {
     slug: 'linkedin-career-intelligence-lakehouse',
     title: 'LinkedIn Career Intelligence Lakehouse',

@@ -3,6 +3,12 @@ import { Skill, SkillSection } from '../shared/models/skill.model';
 
 // HARD SKILLS - EN
 const TECHNICAL_HARD_SKILLS_EN: Array<Skill> = [
+  {"name": "BigQuery", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "Looker", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "Dataform", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "GCP", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "Excel", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "GitHub", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
   { name: 'Python', icon: 'assets/icons/code.svg', percentage: 40 },
   { name: 'SQL', icon: 'assets/icons/database.svg', percentage: 70 },
   { name: 'Databricks', icon: 'assets/icons/terminal.svg', percentage: 40 },
@@ -13,6 +19,12 @@ const TECHNICAL_HARD_SKILLS_EN: Array<Skill> = [
 
 // HARD SKILLS - PT
 const TECHNICAL_HARD_SKILLS_PT: Array<Skill> = [
+  {"name": "BigQuery", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "Looker", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "Dataform", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "GCP", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "Excel", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
+  {"name": "GitHub", "icon": "assets/icons/database.svg", "percentage": 0, "showProficiency": false},
   { name: 'Python', icon: 'assets/icons/code.svg', percentage: 40 },
   { name: 'SQL', icon: 'assets/icons/database.svg', percentage: 70 },
   { name: 'Databricks', icon: 'assets/icons/terminal.svg', percentage: 40 },
