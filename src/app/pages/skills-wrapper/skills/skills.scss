@@ -99,3 +99,47 @@
   .skill-level { color: var.$muted-foreground-dark; }
   .progress-bar-bg { background-color: var.$muted-dark; }
 }
+
+// Card layout for technical skills; soft skills retain their existing layout.
+.skill-cards {
+  .skills-list {
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .skill-item {
+    min-width: 0;
+    min-height: 90px;
+    padding: 1.25rem;
+    border: 1px solid var.$border-light;
+    border-radius: 0.75rem;
+    background: var.$background-card-light;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: var.$accent-color;
+      box-shadow: 0 5px 16px rgba(2, 132, 199, 0.1);
+    }
+  }
+
+  .skill-details { min-width: 0; }
+  .skill-info { margin-bottom: 0; }
+  .skill-name { overflow-wrap: anywhere; line-height: 1.5; }
+
+  &.dark .skill-item {
+    background: var.$background-card-dark;
+    border-color: var.$border-dark;
+    box-shadow: none;
+
+    &:hover { border-color: var.$text-subtitle-dark; }
+  }
+}

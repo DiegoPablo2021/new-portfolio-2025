@@ -1,4 +1,4 @@
-<div class="skills-section-inner" [class.dark]="currentTheme() === 'dark'">
+<div class="skills-section-inner" [class.dark]="currentTheme() === 'dark'" [class.skill-cards]="data().id === 'hard-skills'">
   <div class="skills-header">
     <h2>{{ data().title }}</h2>
     <p class="subtitle">{{ data().subtitle }}</p>
