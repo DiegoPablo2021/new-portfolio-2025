@@ -14,7 +14,7 @@ export const ABOUT_ME_EN = signal<AboutSection[]>([
   {
     id: 'overview',
     title: 'Overview',
-    content: `I’m a Data Analyst with experience in data engineering and analytics, specializing in the extraction, transformation, and visualization of information to support strategic decision-making and process optimization.`,
+    content: `I’m a Mid-level Data Analyst at Conta Azul with experience in data engineering and analytics, specializing in the extraction, transformation, and visualization of information to support strategic decision-making and process optimization.`,
     icon: faChartLine,
   },
   {
@@ -26,13 +26,13 @@ export const ABOUT_ME_EN = signal<AboutSection[]>([
   {
     id: 'education-certifications',
     title: 'Education & Certifications',
-    content: `I hold a solid academic and technical foundation in technology and data, with a degree in Systems Analysis and Development and certifications in Scrum, Oracle Cloud, Databricks, and AWS Generative AI.`,
+    content: `I hold a solid academic and technical foundation in technology and data, with a degree in Systems Analysis and Development, a completed postgraduate qualification in Big Data, ongoing postgraduate studies in Data Engineering, and certifications in Scrum, Oracle Cloud, Databricks, and AWS Generative AI.`,
     icon: faUserGraduate,
   },
   {
     id: 'technical-skills',
     title: 'Technical Skills',
-    content: `My hands-on experience includes SQL, Python, Power BI, Excel, Databricks, and Azure Data Factory, applying agile methodologies and data governance best practices to deliver reliable insights and scalable solutions.`,
+    content: `My hands-on experience includes SQL, BigQuery, Looker, Dataform, Python, Power BI, Excel, Databricks, Git, and GitHub, applying agile methodologies and data governance best practices to deliver reliable insights and scalable solutions.`,
     icon: faCogs,
   },
   {
@@ -44,7 +44,7 @@ export const ABOUT_ME_EN = signal<AboutSection[]>([
   {
     id: 'current-focus',
     title: 'Current Focus',
-    content: `Currently, I’m focused on improving data auditing and quality processes, combining technology, analytics, and business understanding to generate actionable insights and measurable impact.`,
+    content: `At Conta Azul, I work with analytics and BI using BigQuery, Looker and Dataform on GCP. My focus includes SaaS metrics, data modeling and reliable analytical deliveries through Git and GitHub.`,
     icon: faSearch,
   },
   // {
@@ -59,7 +59,7 @@ export const ABOUT_ME_PT = signal<AboutSection[]>([
   {
     id: 'overview',
     title: 'Visão Geral',
-    content: `Sou um Analista de Dados com experiência em engenharia e análise de dados, especializado na extração, transformação e visualização de informações para apoiar a tomada de decisões estratégicas e a otimização de processos.`,
+    content: `Sou Analista de Dados Pleno na Conta Azul, com experiência em engenharia e análise de dados, especializado na extração, transformação e visualização de informações para apoiar a tomada de decisões estratégicas e a otimização de processos.`,
     icon: faChartLine,
   },
   {
@@ -71,13 +71,13 @@ export const ABOUT_ME_PT = signal<AboutSection[]>([
   {
     id: 'education-certifications',
     title: 'Formação & Certificações',
-    content: `Possuo uma base sólida em tecnologia e dados, com graduação em Análise e Desenvolvimento de Sistemas e certificações em Scrum, Oracle Cloud, Databricks e AWS Generative AI.`,
+    content: `Possuo uma base sólida em tecnologia e dados, com graduação em Análise e Desenvolvimento de Sistemas, pós-graduação concluída em Big Data, pós-graduação em Engenharia de Dados em andamento e certificações em Scrum, Oracle Cloud, Databricks e AWS Generative AI.`,
     icon: faUserGraduate,
   },
   {
     id: 'technical-skills',
     title: 'Competências Técnicas',
-    content: `Tenho experiência prática com SQL, Python, Power BI, Excel, Databricks e Azure Data Factory, aplicando metodologias ágeis e boas práticas de governança de dados para entregar insights confiáveis e soluções escaláveis.`,
+    content: `Tenho experiência prática com SQL, BigQuery, Looker, Dataform, Python, Power BI, Excel, Databricks, Git e GitHub, aplicando metodologias ágeis e boas práticas de governança de dados para entregar insights confiáveis e soluções escaláveis.`,
     icon: faCogs,
   },
   {
@@ -89,7 +89,7 @@ export const ABOUT_ME_PT = signal<AboutSection[]>([
   {
     id: 'current-focus',
     title: 'Foco Atual',
-    content: `Atualmente, estou focado na melhoria de processos de auditoria e qualidade de dados, unindo tecnologia, análise e visão de negócio para gerar insights acionáveis e impactos mensuráveis.`,
+    content: `Na Conta Azul, atuo com analytics e BI usando BigQuery, Looker e Dataform no GCP. Meu foco inclui métricas SaaS, modelagem de dados e entregas analíticas com versionamento em Git e GitHub.`,
     icon: faSearch,
   },
   // {

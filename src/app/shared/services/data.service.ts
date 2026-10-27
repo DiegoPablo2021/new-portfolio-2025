@@ -18,7 +18,7 @@ import { FOOTER_EN, FOOTER_PT } from '../../_data/footer.data';
 
 @Injectable()
 export class DataService {
-  private language = signal<'en' | 'pt'>((localStorage.getItem('lang') as 'en' | 'pt') || 'en');
+  private language = signal<'en' | 'pt'>((localStorage.getItem('lang') as 'en' | 'pt') || 'pt');
 
   readonly currentLanguage = this.language.asReadonly();
 

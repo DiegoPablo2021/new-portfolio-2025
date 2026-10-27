@@ -2,6 +2,7 @@ export type Skill = {
   name: string;
   icon: string;
   percentage: number;
+  showProficiency?: boolean;
 };
 
 export type SkillSection = {

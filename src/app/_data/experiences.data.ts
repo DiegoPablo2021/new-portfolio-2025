@@ -3,14 +3,31 @@ import { Experience } from '../shared/models/experience.model';
 
 export const EXPERIENCES_EN = signal<Experience[]>([
   {
+    "title": "Mid-level Data Analyst",
+    "company": "Conta Azul",
+    "period": "Jun 2026 – Present",
+    "location": "Remote",
+    "description": "I work in Data Analytics and Business Intelligence, using SQL and BigQuery to prepare and analyze business data. I develop and maintain analytical models with Dataform on GCP and work with indicators and dashboards in Looker. I version analytical changes with Git and GitHub, using branches, pull requests and reviewed deliveries.",
+    "tools": [
+        "SQL",
+        "BigQuery",
+        "Looker",
+        "Dataform",
+        "GCP",
+        "Git",
+        "GitHub",
+        "Business Intelligence"
+    ]
+},
+  {
     title: 'Data Analyst',
     company: 'Tata Consultancy Services (TCS)',
-    period: 'Apr 2025 – Present',
+    period: '2025 – 2026',
     location: 'Remote',
-    description: `I work on a quality team focused on interaction auditing, performance analysis, and continuous improvement of operational processes for a major energy industry client.
-I perform detailed analyses of operational data using SQL, Excel, Power BI, and Databricks, building reports, metrics, and KPIs that ensure traceability, accuracy, and decision-making support.
-I also help automate audit workflows using Genesys, ServiceNow, and Power Automate, standardizing information, reducing manual steps, and increasing operational efficiency.
-This role strengthens data governance and quality, improves delivery reliability, and supports business areas in making data-driven decisions.`,
+    description: `I worked on a quality team focused on interaction auditing, performance analysis, and continuous improvement of operational processes for a major energy industry client.
+I performed detailed analyses of operational data using SQL, Excel, Power BI, and Databricks, building reports, metrics, and KPIs that ensure traceability, accuracy, and decision-making support.
+I also helped automate audit workflows using Genesys, ServiceNow, and Power Automate, standardizing information, reducing manual steps, and increasing operational efficiency.
+This role strengthened data governance and quality, improved delivery reliability, and supported business areas in making data-driven decisions.`,
     tools: [
       'Power BI',
       'Excel',
@@ -30,10 +47,7 @@ This role strengthens data governance and quality, improves delivery reliability
     company: 'Capgemini',
     period: 'Sep 2024 – Sep 2025',
     location: 'Remote',
-    description: `I worked on analytical solution development, building interactive dashboards and reports with Power BI and Tableau, integrating data from multiple sources using SQL and Azure data services.
-I helped optimize ETL and ELT processes in cloud environments, improving performance, reliability, and organization of analytical data assets.
-I also took part in internal technology enablement programs, including the FICO Blaze Advisor Academy and low-code platforms such as PegaSystems, completing over 550 hours of technical training and internal certifications.
-This experience strengthened my skills in data analysis, system integration, and analytical solution design to support decision-making.`,
+    description: `I participated in internal technical training and practical projects in data, analytics and cloud technologies, including Power BI, SQL and Azure. This period included more than 550 hours of training and internal certifications, alongside FICO Blaze Advisor and low-code studies.`,
     tools: [
       'Power BI',
       'Tableau',
@@ -117,14 +131,31 @@ This experience strengthened my skills in web development, process automation, a
 
 export const EXPERIENCES_PT = signal<Experience[]>([
   {
+    "title": "Analista de Dados Pleno",
+    "company": "Conta Azul",
+    "period": "Jun 2026 – Presente",
+    "location": "Remoto",
+    "description": "Atuo em Data Analytics e Business Intelligence, utilizando SQL e BigQuery na preparação e análise de dados de negócio. Desenvolvo e mantenho modelos analíticos com Dataform no GCP e trabalho com indicadores e dashboards no Looker. Realizo o versionamento de alterações com Git e GitHub, utilizando branches, pull requests e revisão das entregas.",
+    "tools": [
+        "SQL",
+        "BigQuery",
+        "Looker",
+        "Dataform",
+        "GCP",
+        "Git",
+        "GitHub",
+        "Business Intelligence"
+    ]
+},
+  {
     title: 'Analista de Dados',
     company: 'Tata Consultancy Services (TCS)',
-    period: 'Abr 2025 – Presente',
+    period: '2025 – 2026',
     location: 'Remoto',
-    description: `Atuo em um time de qualidade com foco em auditoria de interações, análise de performance e melhoria contínua de processos operacionais em um grande cliente da indústria de energia.
-Realizo análises detalhadas de dados operacionais utilizando SQL, Excel, Power BI e Databricks, estruturando relatórios, métricas e indicadores que garantem rastreabilidade, precisão e suporte à tomada de decisão.
-Contribuo para a automação de fluxos de auditoria utilizando Genesys, ServiceNow e Power Automate, padronizando informações, reduzindo etapas manuais e aumentando a eficiência operacional.
-Essa atuação fortalece a governança e a qualidade dos dados, melhora a confiabilidade das entregas e apoia as áreas de negócio na tomada de decisões baseadas em dados.`,
+    description: `Atuei em um time de qualidade com foco em auditoria de interações, análise de performance e melhoria contínua de processos operacionais em um grande cliente da indústria de energia.
+Realizei análises detalhadas de dados operacionais utilizando SQL, Excel, Power BI e Databricks, estruturando relatórios, métricas e indicadores que garantem rastreabilidade, precisão e suporte à tomada de decisão.
+Contribuí para a automação de fluxos de auditoria utilizando Genesys, ServiceNow e Power Automate, padronizando informações, reduzindo etapas manuais e aumentando a eficiência operacional.
+Essa atuação fortaleceu a governança e a qualidade dos dados, melhorou a confiabilidade das entregas e apoiou as áreas de negócio na tomada de decisões baseadas em dados.`,
     tools: [
       'Power BI',
       'Excel',
@@ -144,10 +175,7 @@ Essa atuação fortalece a governança e a qualidade dos dados, melhora a confia
     company: 'Capgemini',
     period: 'Set 2024 – Set 2025',
     location: 'Remoto',
-    description: `Atuei no desenvolvimento de soluções analíticas, criando dashboards interativos e relatórios com Power BI e Tableau, integrando dados de múltiplas fontes via SQL e serviços de dados em Azure.
-Participei da otimização de processos de ETL e ELT em ambientes em nuvem, aumentando desempenho, confiabilidade e organização das bases de dados usadas em análises.
-Integrei iniciativas internas de capacitação tecnológica, incluindo a Academia FICO Blaze Advisor e estudos em plataformas low-code como PegaSystems, acumulando mais de 550 horas de aprendizado e certificações internas.
-Essa experiência consolidou minha atuação em análise de dados, integração de sistemas e construção de soluções analíticas voltadas ao suporte à decisão.`,
+    description: `Participei de capacitações internas e projetos práticos em dados, analytics e tecnologias em nuvem, incluindo Power BI, SQL e Azure. Esse período incluiu mais de 550 horas de formação e certificações internas, além de estudos em FICO Blaze Advisor e plataformas low-code.`,
     tools: [
       'Power BI',
       'Tableau',
