@@ -3,7 +3,7 @@ import { Experience } from '../shared/models/experience.model';
 
 export const EXPERIENCES_EN = signal<Experience[]>([
   {
-    "title": "Mid-level Data Analyst",
+    "title": "Mid-level Data Analyst (P4)",
     "company": "Conta Azul",
     "period": "Jun 2026 – Present",
     "location": "Remote",
@@ -22,7 +22,7 @@ export const EXPERIENCES_EN = signal<Experience[]>([
   {
     title: 'Data Analyst',
     company: 'Tata Consultancy Services (TCS)',
-    period: '2025 – 2026',
+    period: 'Apr 2025 – Jul 2026',
     location: 'Remote',
     description: `I worked on a quality team focused on interaction auditing, performance analysis, and continuous improvement of operational processes for a major energy industry client.
 I performed detailed analyses of operational data using SQL, Excel, Power BI, and Databricks, building reports, metrics, and KPIs that ensure traceability, accuracy, and decision-making support.
@@ -131,7 +131,7 @@ This experience strengthened my skills in web development, process automation, a
 
 export const EXPERIENCES_PT = signal<Experience[]>([
   {
-    "title": "Analista de Dados Pleno",
+    "title": "Analista de Dados Pleno (P4)",
     "company": "Conta Azul",
     "period": "Jun 2026 – Presente",
     "location": "Remoto",
@@ -150,7 +150,7 @@ export const EXPERIENCES_PT = signal<Experience[]>([
   {
     title: 'Analista de Dados',
     company: 'Tata Consultancy Services (TCS)',
-    period: '2025 – 2026',
+    period: 'Abr 2025 – Jul 2026',
     location: 'Remoto',
     description: `Atuei em um time de qualidade com foco em auditoria de interações, análise de performance e melhoria contínua de processos operacionais em um grande cliente da indústria de energia.
 Realizei análises detalhadas de dados operacionais utilizando SQL, Excel, Power BI e Databricks, estruturando relatórios, métricas e indicadores que garantem rastreabilidade, precisão e suporte à tomada de decisão.
