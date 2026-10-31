@@ -2,11 +2,11 @@ import { signal } from "@angular/core";
 import { GetInTouch } from "../shared/models/get-in-touch.model";
 
 export const GET_IN_TOUCH_EN = signal<GetInTouch>({
-  heading: 'Get in Touch',
-  subheading: "Let's work together on something great",
+  heading: "Let's talk?",
+  subheading: 'About data, projects and good questions.',
 });
 
 export const GET_IN_TOUCH_PT = signal<GetInTouch>({
-  heading: 'Entre em Contato',
-  subheading: 'Vamos trabalhar juntos em algo incrível',
+  heading: 'Vamos conversar?',
+  subheading: 'Sobre dados, projetos e boas perguntas.',
 });

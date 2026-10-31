@@ -7,8 +7,31 @@
   font-family: var.$font-family-main;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+// Rótulo curto acima dos títulos de seção
+.eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+body.light .eyebrow {
+  color: var.$accent-color;
+}
+
+body.dark .eyebrow {
+  color: var.$text-subtitle-dark;
 }
 
 body.light {

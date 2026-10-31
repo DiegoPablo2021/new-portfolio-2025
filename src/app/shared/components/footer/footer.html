@@ -1,5 +1,9 @@
 <footer class="footer-section" [class.dark]="currentTheme() === 'dark'">
-  <p>
-    &copy; {{ footerContent().year }} {{ fullName }}. {{ footerContent().description }}.
-  </p>
+  <div class="footer-container">
+    <p>&copy; {{ footerContent().year }} {{ fullName }}. {{ footerContent().description }}.</p>
+    <nav class="footer-links" aria-label="Social">
+      <a href="https://github.com/DiegoPablo2021" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/diego-pablo" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </nav>
+  </div>
 </footer>

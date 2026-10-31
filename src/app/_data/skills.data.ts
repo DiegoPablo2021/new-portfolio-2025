@@ -1,310 +1,94 @@
 import { signal } from '@angular/core';
-import { Skill, SkillSection } from '../shared/models/skill.model';
+import { Skill, SkillGroup, SkillSection } from '../shared/models/skill.model';
 
-const TECHNICAL_HARD_SKILLS_EN: Array<Skill> = [
+const HARD_SKILL_GROUPS_EN: Array<SkillGroup> = [
   {
-    "name": "SQL",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
+    title: 'Data',
+    icon: 'assets/icons/database.svg',
+    items: [
+      'SQL',
+      'BigQuery',
+      'PostgreSQL / SQL Server',
+      'DuckDB',
+      'MongoDB / Firebase',
+      'Databricks / Snowflake',
+      'GCP / Azure / AWS',
+      'Power BI / DAX',
+      'Looker',
+      'Excel',
+      'ETL / ELT',
+      'Data Modeling',
+    ],
   },
   {
-    "name": "Python",
-    "icon": "assets/icons/code.svg",
-    "percentage": 0,
-    "showProficiency": false
+    title: 'Programming',
+    icon: 'assets/icons/code.svg',
+    items: [
+      'Python',
+      'Java / JavaScript / TypeScript',
+      'Bash',
+      'Git / GitHub',
+      'Generative AI for code & analysis',
+    ],
   },
   {
-    "name": "BigQuery",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
+    title: 'Frameworks',
+    icon: 'assets/icons/terminal.svg',
+    items: [
+      'Pandas / NumPy',
+      'dbt',
+      'PySpark',
+      'Dataform',
+      'Power Query',
+      'Power Automate',
+      'BPMN / Bizagi',
+    ],
   },
-  {
-    "name": "Looker",
-    "icon": "assets/icons/chart-no-axes-column-increasing.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Dataform",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Power BI",
-    "icon": "assets/icons/chart-no-axes-column-increasing.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "DAX / Power Query",
-    "icon": "assets/icons/chart-no-axes-column-increasing.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Excel",
-    "icon": "assets/icons/chart-no-axes-column-increasing.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Pandas / NumPy",
-    "icon": "assets/icons/code.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "PostgreSQL / SQL Server",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "DuckDB",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "MongoDB / Firebase",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "GCP / Azure / AWS",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Databricks / Snowflake",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "dbt / PySpark",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "ETL / ELT",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Git / GitHub",
-    "icon": "assets/icons/git-branch.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Power Automate",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Bash",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Genesys Cloud / ServiceNow",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Java / JavaScript / TypeScript",
-    "icon": "assets/icons/code.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Jira / Miro / Notion",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Bizagi / BPMN",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Data Modeling",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Generative AI: analysis, code & documentation",
-    "icon": "assets/icons/code.svg",
-    "percentage": 0,
-    "showProficiency": false
-  }
 ];
 
-const TECHNICAL_HARD_SKILLS_PT: Array<Skill> = [
+const HARD_SKILL_GROUPS_PT: Array<SkillGroup> = [
   {
-    "name": "SQL",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
+    title: 'Dados',
+    icon: 'assets/icons/database.svg',
+    items: [
+      'SQL',
+      'BigQuery',
+      'PostgreSQL / SQL Server',
+      'DuckDB',
+      'MongoDB / Firebase',
+      'Databricks / Snowflake',
+      'GCP / Azure / AWS',
+      'Power BI / DAX',
+      'Looker',
+      'Excel',
+      'ETL / ELT',
+      'Modelagem de Dados',
+    ],
   },
   {
-    "name": "Python",
-    "icon": "assets/icons/code.svg",
-    "percentage": 0,
-    "showProficiency": false
+    title: 'Programação',
+    icon: 'assets/icons/code.svg',
+    items: [
+      'Python',
+      'Java / JavaScript / TypeScript',
+      'Bash',
+      'Git / GitHub',
+      'IA generativa para código e análise',
+    ],
   },
   {
-    "name": "BigQuery",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
+    title: 'Frameworks',
+    icon: 'assets/icons/terminal.svg',
+    items: [
+      'Pandas / NumPy',
+      'dbt',
+      'PySpark',
+      'Dataform',
+      'Power Query',
+      'Power Automate',
+      'BPMN / Bizagi',
+    ],
   },
-  {
-    "name": "Looker",
-    "icon": "assets/icons/chart-no-axes-column-increasing.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Dataform",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Power BI",
-    "icon": "assets/icons/chart-no-axes-column-increasing.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "DAX / Power Query",
-    "icon": "assets/icons/chart-no-axes-column-increasing.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Excel",
-    "icon": "assets/icons/chart-no-axes-column-increasing.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Pandas / NumPy",
-    "icon": "assets/icons/code.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "PostgreSQL / SQL Server",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "DuckDB",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "MongoDB / Firebase",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "GCP / Azure / AWS",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Databricks / Snowflake",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "dbt / PySpark",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "ETL / ELT",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Git / GitHub",
-    "icon": "assets/icons/git-branch.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Power Automate",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Bash",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Genesys Cloud / ServiceNow",
-    "icon": "assets/icons/server.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Java / JavaScript / TypeScript",
-    "icon": "assets/icons/code.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Jira / Miro / Notion",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Bizagi / BPMN",
-    "icon": "assets/icons/terminal.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "Modelagem de Dados",
-    "icon": "assets/icons/database.svg",
-    "percentage": 0,
-    "showProficiency": false
-  },
-  {
-    "name": "IA generativa: análise, código e documentação",
-    "icon": "assets/icons/code.svg",
-    "percentage": 0,
-    "showProficiency": false
-  }
 ];
 
 // SOFT SKILLS - EN
@@ -331,14 +115,16 @@ export const HARD_SKILLS_SECTION_EN = signal<SkillSection>({
   id: 'hard-skills',
   title: 'Hard Skills',
   subtitle: 'Technologies and tools I work with',
-  skills: TECHNICAL_HARD_SKILLS_EN,
+  skills: [],
+  groups: HARD_SKILL_GROUPS_EN,
 });
 
 export const HARD_SKILLS_SECTION_PT = signal<SkillSection>({
   id: 'hard-skills',
   title: 'Hard Skills',
   subtitle: 'Tecnologias e ferramentas com as quais trabalho',
-  skills: TECHNICAL_HARD_SKILLS_PT,
+  skills: [],
+  groups: HARD_SKILL_GROUPS_PT,
 });
 
 export const SOFT_SKILLS_SECTION_EN = signal<SkillSection>({

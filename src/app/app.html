@@ -14,11 +14,25 @@
     [currentLanguage]="currentLanguage"
   />
 </main>
+} @else if (isProjectsPage()) {
+<main>
+  <app-projects
+    [projects]="this._dataService.projects()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+    [showAll]="true"
+  />
+</main>
 } @else {
 <main>
   <app-hero
     [hero]="this._dataService.heroSection()"
     [roles]="this._dataService.roles()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+  <app-projects
+    [projects]="this._dataService.projects()"
     [currentTheme]="currentTheme"
     [currentLanguage]="currentLanguage"
   />
@@ -40,11 +54,6 @@
   <app-skills-wrapper
     [hardSkills]="this._dataService.hardSkillsSection()"
     [softSkills]="this._dataService.softSkillsSection()"
-    [currentTheme]="currentTheme"
-    [currentLanguage]="currentLanguage"
-  />
-  <app-projects
-    [projects]="this._dataService.projects()"
     [currentTheme]="currentTheme"
     [currentLanguage]="currentLanguage"
   />

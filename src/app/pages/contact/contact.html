@@ -5,12 +5,19 @@
       <p>{{ contactContent().subheading }}</p>
     </div>
 
-    <div class="contact-links">
-      @for(link of contactLinks; track link.href) {
-        <a [href]="link.href" target="_blank" rel="noopener noreferrer" [attr.aria-label]="link.ariaLabel" class="contact-link-item">
-          <fa-icon [icon]="link.icon"></fa-icon>
-        </a>
-      }
+    <div class="contact-actions">
+      <a [href]="contactLinks[0].href" class="contact-cta">
+        <span [textContent]="currentLanguage() === 'pt' ? 'Entrar em contato' : 'Get in touch'"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+      </a>
+
+      <div class="contact-links">
+        @for(link of contactLinks; track link.href) {
+          <a [href]="link.href" target="_blank" rel="noopener noreferrer" [attr.aria-label]="link.ariaLabel" class="contact-link-item">
+            <fa-icon [icon]="link.icon"></fa-icon>
+          </a>
+        }
+      </div>
     </div>
   </div>
 </section>

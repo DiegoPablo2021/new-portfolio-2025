@@ -1,8 +1,7 @@
 @use '../../scss/variables' as var;
 
 .footer-section {
-  padding: 2rem 1rem;
-  text-align: center;
+  padding: 1.75rem 2rem;
   background-color: var.$background-card-light;
   border-top: 1px solid var.$border-light;
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -13,6 +12,10 @@
     font-size: 0.9rem;
   }
 
+  .footer-links a {
+    color: var.$accent-color;
+  }
+
   &.dark {
     background-color: var.$background-card-dark;
     border-top-color: var.$border-dark;
@@ -20,5 +23,42 @@
     p {
       color: var.$muted-foreground-dark;
     }
+
+    .footer-links a {
+      color: var.$text-subtitle-dark;
+    }
+  }
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+
+  a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.25em;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
   }
 }

@@ -1,9 +1,29 @@
 <div class="skills-section-inner" [class.dark]="currentTheme() === 'dark'" [class.skill-cards]="data().id === 'hard-skills'">
   <div class="skills-header">
+    <p class="eyebrow">{{ data().id === 'hard-skills' ? (currentLanguage() === 'pt' ? 'Stack técnica' : 'Tech stack') : (currentLanguage() === 'pt' ? 'Comportamental' : 'Behavioral') }}</p>
     <h2>{{ data().title }}</h2>
     <p class="subtitle">{{ data().subtitle }}</p>
   </div>
 
+  @if (groupsWithIcons().length) {
+  <div class="skill-groups">
+    @for (group of groupsWithIcons(); track group.title) {
+      <article class="skill-group">
+        <header class="skill-group__header">
+          <span class="skill-icon" aria-hidden="true">
+            <span [innerHTML]="(group.svgIcon$ | async) ?? ''"></span>
+          </span>
+          <h3>{{ group.title }}</h3>
+        </header>
+        <ul class="skill-chips">
+          @for (item of group.items; track item) {
+            <li class="skill-chip">{{ item }}</li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+  } @else {
   <div class="skills-list">
     @for (skill of skillsWithIcons(); track skill.name) {
       <div class="skill-item">
@@ -26,4 +46,5 @@
       </div>
     }
   </div>
+  }
 </div>

@@ -13,6 +13,10 @@ export class Badges {
   currentLanguage = input.required<'en' | 'pt'>();
   badges = input.required<Badge[]>();
 
+  sectionEyebrow = computed(() => {
+    return this.currentLanguage() === 'pt' ? 'Certificações' : 'Certifications';
+  });
+
   sectionTitle = computed(() => {
     return this.currentLanguage() === 'pt' ? 'Conquistas' : 'Badges';
   });

@@ -24,7 +24,10 @@ import { getProjectCaseBySlug } from './_data/project-cases.data';
 export class App {
   _dataService = inject(DataService);
   _themeService =inject(ThemeService);
-  private caseSlug = signal<string | null>(this.getCaseSlugFromUrl());
+  private caseSlug = signal<string | null>(this.getQueryParam('case'));
+  private view = signal<string | null>(this.getQueryParam('view'));
+
+  isProjectsPage = computed(() => !this.caseSlug() && this.view() === 'projects');
 
   currentProjectCase = computed(() => {
     const slug = this.caseSlug();
@@ -32,7 +35,18 @@ export class App {
       return undefined;
     }
 
-    return getProjectCaseBySlug(this.currentLanguage, slug);
+    const projectCase = getProjectCaseBySlug(this.currentLanguage, slug);
+    if (!projectCase) {
+      return undefined;
+    }
+
+    // Links de App/Dashboard vêm do case; se ausentes, usa os dados do card do projeto.
+    const project = this._dataService.projects().find((item) => item.slug === slug);
+    return {
+      ...projectCase,
+      appUrl: projectCase.appUrl ?? project?.appLink,
+      dashboardUrl: projectCase.dashboardUrl ?? project?.dashboardLink,
+    };
   });
 
   get currentTheme() {
@@ -43,16 +57,17 @@ export class App {
     return this._dataService.currentLanguage();
   }
 
-  private getCaseSlugFromUrl(): string | null {
+  private getQueryParam(name: string): string | null {
     if (typeof window === 'undefined') {
       return null;
     }
 
-    return new URLSearchParams(window.location.search).get('case');
+    return new URLSearchParams(window.location.search).get(name);
   }
 
   @HostListener('window:popstate')
   onPopState() {
-    this.caseSlug.set(this.getCaseSlugFromUrl());
+    this.caseSlug.set(this.getQueryParam('case'));
+    this.view.set(this.getQueryParam('view'));
   }
 }
