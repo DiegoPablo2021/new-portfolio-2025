@@ -1,115 +1,122 @@
 @use '../../shared/scss/variables' as var;
 
 .hero-section {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem 4.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid var.$border-light;
   margin: 0 auto;
 
   .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 3rem;
   }
 
   .hero-content {
-    flex: 1 1 500px;
     min-width: 0;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
-    .hero-subtitle {
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      font-weight: 700;
-      color: var.$accent-color;
-      margin-bottom: 0.7rem;
+    .eyebrow {
+      margin-bottom: 1rem;
     }
 
     h1 {
-      font-size: 3.6rem;
-      font-weight: 900;
-      line-height: 1.1;
-      margin-bottom: 1.2rem;
-      color: var.$text-title-light;
-      max-width: 100%;
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
       text-wrap: balance;
     }
 
+    .accent-dot {
+      color: var.$accent-color;
+    }
+
     .role {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var.$text-subtitle-light;
+      font-size: 1.5rem;
+      font-weight: 600;
       margin-bottom: 1.5rem;
       min-height: 1.5em;
     }
 
-    .intro,
-    .skills {
-      font-size: 1.3rem;
-      margin-bottom: 1.2rem;
-      line-height: 1.6;
-      color: var.$text-paragraph-light;
+    .intro {
+      font-size: 1.15rem;
+      line-height: 1.65;
+      max-width: 34rem;
+      margin-bottom: 2rem;
     }
 
-    .btn-contact {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var.$button-background-light;
-      color: white;
-      font-weight: 700;
-      width: 300px;
-      padding: 1.1rem 1rem;
-      border-radius: 9999px;
-      font-size: 1.2rem;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      text-decoration: none;
+    .skills {
+      font-size: 0.95rem;
+      margin-top: 1.5rem;
+    }
+  }
 
-      i {
-        display: inline-flex;
-        margin-left: 0.5rem;
-        transition: transform 0.3s ease;
-        color: inherit;
-      }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.3rem;
+      border-radius: 0.6rem;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease,
+        transform 0.3s ease;
 
       svg {
-        display: block;
-        stroke: currentColor;
-        width: 18px;
-        height: 18px;
+        transition: transform 0.3s ease;
       }
 
       &:hover {
-        background-color: var.$button-hover-light;
-
-        i {
-          transform: translateX(5px);
-        }
+        transform: translateY(-2px);
       }
+    }
+
+    .btn-primary:hover svg {
+      transform: translateY(2px);
+    }
+
+    .btn-outline:hover svg {
+      transform: translate(2px, -2px);
     }
   }
 
   .hero-img-wrapper {
-    flex: 1 1 400px;
     min-width: 0;
     display: flex;
     justify-content: center;
+  }
+
+  .hero-frame {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1.05;
+    border-radius: 45% 45% 1rem 1rem / 35% 35% 1rem 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: background-color 0.3s ease;
 
     .hero-img {
       width: 100%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 1rem;
+      height: 92%;
       object-fit: cover;
-      border: none;
-      transition: transform 0.3s ease;
-      transform: translateY(65px);
+      object-position: top center;
     }
   }
 }
@@ -132,18 +139,29 @@ body.light .hero-section {
     .skills {
       color: var.$text-paragraph-light;
     }
+  }
 
-    .btn-contact {
-      background-color: var.$button-background-light;
+  .btn-primary {
+    background-color: var.$button-background-light;
+    color: white;
 
-      &:hover {
-        background-color: var.$button-hover-light;
-      }
+    &:hover {
+      background-color: var.$button-hover-light;
     }
   }
 
-  .hero-img-wrapper .hero-img {
-    border-color: transparent;
+  .btn-outline {
+    border-color: var.$border-light;
+    color: var.$text-title-light;
+
+    &:hover {
+      border-color: var.$button-background-light;
+      color: var.$button-background-light;
+    }
+  }
+
+  .hero-frame {
+    background-color: var.$muted-light;
   }
 }
 
@@ -151,10 +169,15 @@ body.light .hero-section {
 .dark.hero-section {
   background-color: var.$background-body-dark;
   color: var.$text-paragraph-dark;
+  border-bottom-color: var.$border-dark;
 
   .hero-content {
     h1 {
       color: var.$text-title-dark;
+    }
+
+    .accent-dot {
+      color: var.$text-subtitle-dark;
     }
 
     .role {
@@ -165,129 +188,75 @@ body.light .hero-section {
     .skills {
       color: var.$text-paragraph-dark;
     }
+  }
 
-    .btn-contact {
-      background-color: var.$button-background-dark;
+  .btn-primary {
+    background-color: var.$button-background-dark;
+    color: var.$background-body-dark;
 
-      &:hover {
-        background-color: var.$button-hover-dark;
-      }
+    &:hover {
+      background-color: var.$button-hover-dark;
     }
   }
 
-  .hero-img-wrapper .hero-img {
-    border-color: transparent;
+  .btn-outline {
+    border-color: var.$border-dark;
+    background-color: var.$muted-dark;
+    color: var.$text-title-dark;
+
+    &:hover {
+      border-color: var.$button-background-dark;
+      color: var.$button-background-dark;
+    }
+  }
+
+  .hero-frame {
+    background-color: var.$muted-dark;
   }
 }
 
 // Responsividade
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hero-section {
     padding: 3rem 1rem;
-    overflow-x: clip;
 
     .hero-container {
-      flex-direction: column-reverse;
-      text-align: center;
-      gap: 1.5rem;
-
-      .hero-content {
-        flex: none;
-        width: 100%;
-        text-align: left;
-        align-items: flex-start;
-
-        h1 {
-          font-size: 2.5rem;
-          line-height: 1.05;
-        }
-
-        .role {
-          font-size: 1.4rem;
-        }
-
-        .intro,
-        .skills {
-          font-size: 1.1rem;
-          max-width: 100%;
-        }
-
-        .btn-contact {
-          width: 100%;
-          max-width: 280px;
-          font-size: 1.1rem;
-          padding: 1rem 0;
-          justify-content: center;
-          margin: 0;
-        }
-      }
-
-      .hero-img-wrapper {
-        flex: none;
-        width: 100%;
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 4rem;
-
-        .hero-img {
-          width: min(72%, 320px);
-          border-radius: 0.75rem;
-          box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.25);
-          transform: translateY(0);
-        }
-      }
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
     }
-  }
 
-  .dark {
-    .hero-img {
-      background-color: var.$accent-color;
+    .hero-img-wrapper {
+      order: -1;
+    }
+
+    .hero-frame {
+      max-width: 300px;
     }
   }
 }
 
 @media (max-width: 480px) {
   .hero-section {
-    flex-direction: column-reverse;
-    padding: 2rem 1rem;
-
-    .hero-container {
-      gap: 1rem;
-
-      .hero-content {
-        h1 {
-          font-size: 2rem;
-        }
-
-        .role {
-          font-size: 1.2rem;
-          min-height: 1.4em;
-        }
-
-        .intro,
-        .skills {
-          font-size: 1rem;
-          line-height: 1.65;
-        }
-
-        .btn-contact {
-          max-width: 100%;
-          width: 100%;
-          font-size: 1rem;
-          padding: 0.9rem 0;
-        }
+    .hero-content {
+      .role {
+        font-size: 1.2rem;
       }
 
-      .hero-img-wrapper {
-        margin-bottom: 2rem;
-
-        .hero-img {
-          max-width: min(100%, 260px);
-        }
+      .intro {
+        font-size: 1rem;
       }
+    }
+
+    .hero-actions {
+      width: 100%;
+
+      a {
+        flex: 1 1 100%;
+      }
+    }
+
+    .hero-frame {
+      max-width: 240px;
     }
   }
 }
-
-.cv-link { margin-top: 1rem; color: inherit; text-underline-offset: 0.25em; font-size: 1rem; }

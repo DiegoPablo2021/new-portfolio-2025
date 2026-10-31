@@ -1,5 +1,6 @@
 <div class="skills-section-inner" [class.dark]="currentTheme() === 'dark'" [class.skill-cards]="data().id === 'hard-skills'">
   <div class="skills-header">
+    <p class="eyebrow">{{ data().id === 'hard-skills' ? (currentLanguage() === 'pt' ? 'Stack técnica' : 'Tech stack') : (currentLanguage() === 'pt' ? 'Comportamental' : 'Behavioral') }}</p>
     <h2>{{ data().title }}</h2>
     <p class="subtitle">{{ data().subtitle }}</p>
   </div>

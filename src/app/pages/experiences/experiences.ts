@@ -12,8 +12,12 @@ export class Experiences {
   currentLanguage = input.required<'en' | 'pt'>();
   experiencesContent = input.required<Experience[]>();
 
+  sectionEyebrow = computed(() => {
+    return this.currentLanguage() === 'pt' ? 'Trajetória' : 'Career';
+  });
+
   sectionTitle = computed(() => {
-    return this.currentLanguage() === 'pt' ? 'Experiências' : 'Experiences';
+    return this.currentLanguage() === 'pt' ? 'Experiência que conecta' : 'Experience that connects';
   });
 
   sectionSubtitle = computed(() => {

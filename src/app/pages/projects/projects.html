@@ -1,12 +1,21 @@
 <section id="projects" class="projects-section" [class.dark]="currentTheme() === 'dark'">
   <div class="projects-container">
     <div class="projects-header">
-      <h2>{{ sectionTitle() }}</h2>
-      <p class="subtitle">{{ sectionSubtitle() }}</p>
+      <div class="projects-header__text">
+        <p class="eyebrow">{{ sectionEyebrow() }}</p>
+        <h2>{{ sectionTitle() }}</h2>
+        <p class="subtitle">{{ sectionSubtitle() }}</p>
+      </div>
+      @if (projects().length > featuredCount) {
+        <button type="button" class="projects-toggle" (click)="showAll.set(!showAll())" [attr.aria-expanded]="showAll()">
+          {{ toggleLabel() }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+      }
     </div>
 
     <div class="projects-grid">
-      @for (project of projects(); track project.title) {
+      @for (project of visibleProjects(); track project.title) {
         <div class="project-card">
           <div class="project-image-container">
             <img [src]="project.imageUrl" [alt]="project.title" class="project-image" />

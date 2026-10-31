@@ -7,28 +7,20 @@ export const NAVBAR_EN = signal<NavLink[]>([
     link: '',
   },
   {
+    label: 'Projects',
+    link: 'projects',
+  },
+  {
     label: 'About',
     link: 'about',
   },
   {
-    label: 'Experiences',
+    label: 'Experience',
     link: 'experiences',
   },
   {
-    label: 'Badges',
-    link: 'badges',
-  },
-  {
-    label: 'Hard Skills',
+    label: 'Skills',
     link: 'hard-skills',
-  },
-  {
-    label: 'Soft Skills',
-    link: 'soft-skills',
-  },
-  {
-    label: 'Projects',
-    link: 'projects',
   },
   {
     label: 'Testimonials',
@@ -46,28 +38,20 @@ export const NAVBAR_PT = signal<NavLink[]>([
     link: 'home',
   },
   {
+    label: 'Projetos',
+    link: 'projects',
+  },
+  {
     label: 'Sobre',
     link: 'about',
   },
   {
-    label: 'Experiências',
+    label: 'Experiência',
     link: 'experiences',
   },
   {
-    label: 'Conquistas',
-    link: 'badges',
-  },
-  {
-    label: 'Hard Skills',
+    label: 'Skills',
     link: 'hard-skills',
-  },
-  {
-    label: 'Soft Skills',
-    link: 'soft-skills',
-  },
-  {
-    label: 'Projetos',
-    link: 'projects',
   },
   {
     label: 'Depoimentos',

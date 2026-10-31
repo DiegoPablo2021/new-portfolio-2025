@@ -12,8 +12,12 @@ export class About {
   currentTheme = input.required<'light' | 'dark'>();
   currentLanguage = input.required<'en' | 'pt'>();
 
+  sectionEyebrow = computed(() => {
+    return this.currentLanguage() === 'pt' ? 'Sobre mim' : 'About me';
+  });
+
   sectionTitle = computed(() => {
-    return this.currentLanguage() === 'pt' ? 'Sobre Mim' : 'About Me';
+    return this.currentLanguage() === 'pt' ? 'Visão de negócio. Base em tecnologia.' : 'Business vision. Technology foundation.';
   });
 
   sectionSubtitle = computed(() => {

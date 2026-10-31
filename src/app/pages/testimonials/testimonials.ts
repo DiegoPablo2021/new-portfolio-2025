@@ -16,13 +16,17 @@ export class Testimonials {
 
   quoteIcon = faQuoteRight;
 
+  sectionEyebrow = computed(() => {
+    return this.currentLanguage() === 'pt' ? 'Quem trabalhou comigo' : 'Who worked with me';
+  });
+
   sectionTitle = computed(() => {
     return this.currentLanguage() === 'pt' ? 'Depoimentos' : 'Testimonials';
   });
 
   sectionSubtitle = computed(() => {
     return this.currentLanguage() === 'pt'
-      ? 'O que outros profissionais dizem sobre mim.'
-      : 'What other professionals say about me.';
+      ? 'Perspectivas sobre colaboração, aprendizado e trabalho em equipe.'
+      : 'Perspectives on collaboration, learning and teamwork.';
   });
 }
