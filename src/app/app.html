@@ -14,6 +14,15 @@
     [currentLanguage]="currentLanguage"
   />
 </main>
+} @else if (isProjectsPage()) {
+<main>
+  <app-projects
+    [projects]="this._dataService.projects()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+    [showAll]="true"
+  />
+</main>
 } @else {
 <main>
   <app-hero

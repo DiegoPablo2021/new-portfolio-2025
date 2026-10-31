@@ -17,7 +17,8 @@ export const EXPERIENCES_EN = signal<Experience[]>([
         "Git",
         "GitHub",
         "Business Intelligence"
-    ]
+    ],
+    "logo": "assets/img/enterprise/contaazul_logo.jpg"
 },
   {
     title: 'Data Analyst',
@@ -145,7 +146,8 @@ export const EXPERIENCES_PT = signal<Experience[]>([
         "Git",
         "GitHub",
         "Business Intelligence"
-    ]
+    ],
+    "logo": "assets/img/enterprise/contaazul_logo.jpg"
 },
   {
     title: 'Analista de Dados',

@@ -7,6 +7,10 @@
   font-family: var.$font-family-main;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 72px;

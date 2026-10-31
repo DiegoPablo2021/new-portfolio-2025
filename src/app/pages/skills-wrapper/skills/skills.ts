@@ -25,6 +25,13 @@ export class Skills {
     }));
   });
 
+  groupsWithIcons = computed(() =>
+    (this.data().groups ?? []).map((group) => ({
+      ...group,
+      svgIcon$: this.sanitizerService.loadSvg(group.icon),
+    }))
+  );
+
   getProficiency(percentage: number): { level: string; text: string } {
     const isPt = this.currentLanguage() === 'pt';
 
